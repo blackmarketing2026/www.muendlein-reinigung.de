@@ -1,17 +1,21 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo" aria-label="Mündlein Reinigung – Startseite">
-      <img src="/assets/images/logo/logo.svg" alt="Mündlein Reinigung Logo" width="180" height="48">
+    <a href="/" class="logo" aria-label="Thomas Mündlein Reinigung – Startseite">
+      <span class="logo-text">
+        Thomas Mündlein Reinigung
+        <span class="logo-sub">Reinigungsfirma aus Solingen</span>
+      </span>
     </a>
 
     <nav class="main-nav" aria-label="Hauptnavigation">
       <a href="/leistungen">Leistungen</a>
+      <a href="/#zielgruppen">Für Gewerbe</a>
+      <a href="/#zielgruppen">Für Privatkunden</a>
       <a href="/#ablauf">Ablauf</a>
-      <a href="/blog/">Blog</a>
-      <a href="/kontakt">Kontakt</a>
+      <a href="/#kontakt">Kontakt</a>
     </nav>
 
-    <a href="/kontakt" class="btn btn-primary header-cta">Jetzt anfragen</a>
+    <a href="/#kontakt" class="btn btn-accent header-cta">Jetzt Anfrage senden</a>
 
     <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
       <span></span>
@@ -22,9 +26,10 @@
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" hidden>
     <a href="/leistungen">Leistungen</a>
+    <a href="/#zielgruppen">Für Gewerbe</a>
+    <a href="/#zielgruppen">Für Privatkunden</a>
     <a href="/#ablauf">Ablauf</a>
-    <a href="/blog/">Blog</a>
-    <a href="/kontakt">Kontakt</a>
-    <a href="/kontakt" class="btn btn-primary">Jetzt anfragen</a>
+    <a href="/#kontakt">Kontakt</a>
+    <a href="/#kontakt" class="btn btn-accent">Jetzt Anfrage senden</a>
   </nav>
 </header>

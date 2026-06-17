@@ -1,94 +1,115 @@
 /* ============================================================
-   Mündlein Reinigung – Responsive Styles
-   Mobile First: Anpassungen ab Breakpoint aufwärts
+   Thomas Mündlein Reinigung – Responsive Styles
+   Mobile First: Breakpoints 1024 / 768 / 480 px
    ============================================================ */
 
-/* --- Tablet & kleiner Desktop (max 1024px) --- */
+/* --- Tablet / kleiner Desktop (max 1024px) --- */
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-
   .footer-brand { grid-column: span 2; }
 
   .steps { grid-template-columns: repeat(2, 1fr); }
+
+  .branchen-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .contact-section-grid { grid-template-columns: 1fr; }
+
+  .mechanism-steps { gap: 0; }
 }
 
 /* --- Tablet (max 768px) --- */
 @media (max-width: 768px) {
-  /* Navigation */
-  .main-nav    { display: none; }
-  .header-cta  { display: none; }
-  .nav-toggle  { display: flex; }
+  :root {
+    --spacing-xl: 3.5rem;
+    --spacing-xxl: 5rem;
+  }
 
-  .mobile-nav[hidden] { display: none; }
+  /* Navigation */
+  .main-nav   { display: none; }
+  .header-cta { display: none; }
+  .nav-toggle { display: flex; }
+  .mobile-nav[hidden]       { display: none; }
   .mobile-nav:not([hidden]) { display: flex; }
 
   /* Hero */
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-media { order: -1; }
-
-  .hero-media img { height: 260px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; }
+  .hero-service-grid { grid-template-columns: repeat(3, 1fr); }
 
   /* Grids */
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
 
   /* Problem */
-  .problem-list { grid-template-columns: 1fr; }
+  .problem-grid { grid-template-columns: 1fr; }
+
+  /* Mechanismus */
+  .mechanism-steps {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .step-arrow { transform: rotate(90deg); margin: 0 auto; }
+
+  /* Zielgruppen */
+  .zielgruppen-split { grid-template-columns: 1fr; }
 
   /* Ablauf */
   .steps { grid-template-columns: 1fr; gap: 1.25rem; }
 
-  /* Kontakt */
-  .contact-grid { grid-template-columns: 1fr; }
+  /* Branchen */
+  .branchen-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Trust Features */
+  .trust-features { grid-template-columns: 1fr; }
 
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: span 1; }
+  .footer-brand p { max-width: none; }
 
-  /* Trust bar */
-  .trust-bar-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  /* Sections */
-  .section { padding: 3rem 0; }
+  /* Form */
+  .form-row { grid-template-columns: 1fr; }
 
   /* CTA */
   .cta-group { flex-direction: column; align-items: center; }
-  .cta-group .btn { width: 100%; max-width: 340px; }
+  .cta-group .btn { width: 100%; max-width: 360px; }
+
+  /* Hero actions */
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+
+  .section { padding: 3rem 0; }
 }
 
 /* --- Mobil (max 480px) --- */
 @media (max-width: 480px) {
-  :root { --spacing-xl: 3rem; }
-
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.5rem; }
-
-  .hero { padding: 2rem 0; }
-  .hero-media img { height: 220px; }
-
-  .hero-actions {
-    flex-direction: column;
+  :root {
+    --spacing-xl: 2.5rem;
   }
 
-  .hero-actions .btn { width: 100%; text-align: center; }
+  h1 { font-size: 1.65rem; }
+  h2 { font-size: 1.4rem; }
 
-  .hero-trust { flex-direction: column; gap: 0.5rem; }
+  .hero { padding: 2rem 0 2.5rem; }
 
-  .card { padding: 1.25rem; }
+  .hero-service-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .btn-lg { padding: 0.875rem 1.5rem; font-size: 1rem; }
+  .branchen-grid { grid-template-columns: 1fr; }
 
-  .site-header .header-inner { height: 64px; }
-  .logo img { height: 36px; }
+  .problem-grid { grid-template-columns: 1fr; }
 
-  .legal-content { padding: 2rem 0; }
+  .zielgruppe-panel { padding: 2rem 1.5rem; }
+
+  .contact-section-form { padding: 1.5rem; }
+
+  .btn-lg { padding: 0.875rem 1.5rem; font-size: 0.975rem; }
+
+  .site-header .header-inner { height: 60px; }
+
+  .mechanism-steps { gap: 0.5rem; }
+  .step-arrow { font-size: 1.2rem; }
+
+  .trust-features { grid-template-columns: 1fr; gap: 0.75rem; }
 }
