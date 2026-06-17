@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reinigungsfirma Solingen | Thomas Mündlein Reinigung – VORSCHAU</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+/* ============================================================
+   Thomas Mündlein Reinigung – Eingebettetes CSS (Vorschau)
+   ============================================================ */
+:root {
+  --color-primary:#0F2F4A;--color-primary-mid:#1E6FA8;
+  --color-primary-light:#EAF5FC;--color-accent:#2D9CDB;
+  --color-accent-dark:#1A7AB8;--color-text:#1F2933;
+  --color-text-light:#5A6878;--color-bg:#FFFFFF;
+  --color-bg-light:#F6F8FA;--color-border:#E2E8F0;
+  --color-white:#FFFFFF;--font-family:'Inter',system-ui,sans-serif;
+  --radius:8px;--radius-lg:16px;--radius-xl:24px;
+  --shadow-sm:0 1px 4px rgba(15,47,74,.06);
+  --shadow-md:0 4px 16px rgba(15,47,74,.10);
+  --shadow-lg:0 8px 32px rgba(15,47,74,.14);
+  --shadow-xl:0 16px 48px rgba(15,47,74,.16);
+  --container-max:1160px;--transition:all 0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-family);font-size:16px;line-height:1.65;color:var(--color-text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-accent);text-decoration:none;transition:var(--transition)}
+ul,ol{list-style:none}
+address{font-style:normal}
+h1,h2,h3,h4{line-height:1.2;font-weight:700;color:var(--color-text)}
+h1{font-size:clamp(1.85rem,4.5vw,2.75rem)}
+h2{font-size:clamp(1.5rem,3vw,2.1rem)}
+h3{font-size:clamp(1rem,1.8vw,1.25rem)}
+p{max-width:65ch}
+.lead{font-size:1.1rem;color:var(--color-text-light);line-height:1.75}
+.eyebrow{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--color-accent);margin-bottom:.5rem;display:block}
+.container{width:100%;max-width:var(--container-max);margin:0 auto;padding:0 1.5rem}
+.section{padding:5rem 0}
+.section-light{background:var(--color-bg-light)}
+.section-primary{background:var(--color-primary)}
+.section-primary h2,.section-primary h3{color:#fff}
+.section-header{text-align:center;max-width:700px;margin:0 auto 3.5rem}
+.section-header h2{margin-bottom:.75rem}
+.section-header .lead{margin:0 auto}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.75rem;font-family:var(--font-family);font-size:.975rem;font-weight:600;border-radius:var(--radius);border:2px solid transparent;cursor:pointer;transition:var(--transition);text-decoration:none;white-space:nowrap;line-height:1}
+.btn-accent{background:var(--color-accent);color:#fff;border-color:var(--color-accent)}
+.btn-accent:hover{background:var(--color-accent-dark);border-color:var(--color-accent-dark);color:#fff;transform:translateY(-1px);box-shadow:0 4px 16px rgba(45,156,219,.35)}
+.btn-outline{background:transparent;color:var(--color-primary);border-color:var(--color-primary)}
+.btn-outline:hover{background:var(--color-primary);color:#fff}
+.btn-outline-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-outline-white:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
+.btn-lg{padding:1rem 2.25rem;font-size:1.05rem}
+.btn-link{color:var(--color-accent);font-size:.875rem;font-weight:600;display:inline-flex;align-items:center;gap:.3rem}
+/* Header */
+.site-header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--color-border);box-shadow:0 1px 8px rgba(15,47,74,.06)}
+.header-inner{display:flex;align-items:center;height:68px;gap:2rem}
+.logo{flex-shrink:0;display:flex;align-items:center;text-decoration:none}
+.logo-text{font-size:1rem;font-weight:700;color:var(--color-primary);line-height:1.2}
+.logo-sub{font-size:.7rem;font-weight:500;color:var(--color-text-light);display:block}
+.main-nav{display:flex;align-items:center;gap:1.75rem;margin-left:auto}
+.main-nav a{font-size:.875rem;font-weight:500;color:var(--color-text);white-space:nowrap}
+.main-nav a:hover{color:var(--color-accent)}
+.header-cta{flex-shrink:0}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:auto}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-primary);border-radius:2px}
+.mobile-nav{display:flex;flex-direction:column;padding:1rem 1.5rem 1.5rem;border-top:1px solid var(--color-border);background:#fff;gap:.25rem}
+.mobile-nav a{font-size:.975rem;font-weight:500;color:var(--color-text);padding:.65rem 0;border-bottom:1px solid var(--color-border)}
+.mobile-nav .btn{margin-top:1rem;width:100%;text-align:center}
+/* Hero */
+.hero{padding:5rem 0 7rem;background:linear-gradient(145deg,#EAF5FC 0%,#F6F8FA 50%,#fff 100%);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:3.5rem}
+.hero-content{max-width:580px}
+.hero-content h1{margin-bottom:1rem;color:var(--color-primary)}
+.hero-content .lead{margin-bottom:1.5rem}
+.hero-bullets{display:flex;flex-direction:column;gap:.45rem;margin-bottom:2rem}
+.hero-bullets li{font-size:.95rem;color:var(--color-text-light);padding-left:1.5rem;position:relative}
+.hero-bullets li::before{content:'✓';position:absolute;left:0;color:var(--color-accent);font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.875rem;margin-bottom:1.25rem}
+.hero-trust-line{font-size:.8rem;color:var(--color-text-light);max-width:none}
+.hero-visual{display:flex;flex-direction:column;gap:1rem}
+.hero-img{border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);background:var(--color-primary-light);min-height:320px;display:flex;align-items:center;justify-content:center;color:var(--color-primary-mid);font-size:.9rem;text-align:center;padding:2rem}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.hero-service-badge{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius);padding:.6rem .75rem;font-size:.8rem;font-weight:500;color:var(--color-text);display:flex;align-items:center;gap:.4rem;box-shadow:var(--shadow-sm)}
+.badge-icon{font-size:1rem;flex-shrink:0}
+/* Problem */
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2rem}
+.problem-card{background:#fff;border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow-sm);border:1px solid var(--color-border);border-left:4px solid var(--color-accent);transition:var(--transition)}
+.problem-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.problem-card-icon{font-size:1.5rem;margin-bottom:.75rem}
+.problem-card h3{font-size:1rem;margin-bottom:.5rem}
+.problem-card p{font-size:.9rem;color:var(--color-text-light);max-width:none}
+/* Mechanismus */
+.mechanism-steps{display:flex;align-items:flex-start;margin-bottom:2rem}
+.mechanism-step{flex:1;text-align:center;padding:1.5rem 1rem;background:var(--color-bg-light);border-radius:var(--radius-lg);border:1px solid var(--color-border);transition:var(--transition)}
+.mechanism-step:hover{box-shadow:var(--shadow-md);background:#fff}
+.step-num{width:48px;height:48px;background:var(--color-accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;margin:0 auto 1rem}
+.mechanism-step h3{font-size:.975rem;margin-bottom:.5rem}
+.mechanism-step p{font-size:.875rem;color:var(--color-text-light);max-width:none}
+.step-arrow{flex-shrink:0;font-size:1.5rem;color:var(--color-accent);padding:0 .25rem;margin-top:2.5rem;align-self:flex-start}
+.trust-note{font-size:.8rem;color:var(--color-text-light);margin-top:.75rem;max-width:none}
+/* Cards */
+.card{background:#fff;border-radius:var(--radius-lg);padding:1.75rem 1.5rem;box-shadow:var(--shadow-sm);border:1px solid var(--color-border);transition:var(--transition)}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);border-color:var(--color-primary-light)}
+.card-icon{font-size:2rem;margin-bottom:1rem;display:block}
+.card h3{margin-bottom:.5rem;font-size:1.05rem}
+.card p{font-size:.9rem;color:var(--color-text-light);max-width:none}
+/* Zielgruppen */
+.zielgruppen-split{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg)}
+.zielgruppe-panel{padding:3rem 2.5rem}
+.zielgruppe-panel--dark{background:var(--color-primary);color:#fff}
+.zielgruppe-panel--dark h3{color:#fff}
+.zielgruppe-panel--dark p{color:rgba(255,255,255,.75);max-width:none}
+.zielgruppe-panel--light{background:var(--color-primary-light)}
+.zielgruppe-panel--light h3{color:var(--color-primary)}
+.zielgruppe-panel--light p{color:var(--color-text-light);max-width:none}
+.panel-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+.zielgruppe-panel h3{font-size:1.35rem;margin-bottom:.75rem}
+.zielgruppe-panel p{margin-bottom:1.5rem}
+.zielgruppe-list{display:flex;flex-direction:column;gap:.4rem;margin-bottom:2rem}
+.zielgruppe-list li{font-size:.9rem;color:rgba(255,255,255,.8);padding-left:1.25rem;position:relative}
+.zielgruppe-list li::before{content:'→';position:absolute;left:0;color:var(--color-accent);font-weight:700}
+.zielgruppe-list--dark li{color:var(--color-text-light)}
+.zielgruppe-list--dark li::before{color:var(--color-primary-mid)}
+/* Warum */
+.why-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:1.75rem 1.5rem;transition:var(--transition)}
+.why-card:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.why-icon{font-size:1.75rem;margin-bottom:.875rem;display:block}
+.why-card h3{color:#fff;font-size:1.05rem;margin-bottom:.5rem}
+.why-card p{color:rgba(255,255,255,.7);font-size:.9rem;max-width:none}
+/* Ablauf */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.step{text-align:center}
+.step-number{width:56px;height:56px;background:var(--color-primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:700;margin:0 auto 1rem}
+.step h3{font-size:1rem;margin-bottom:.5rem}
+.step p{font-size:.875rem;color:var(--color-text-light)}
+/* Branchen */
+.branchen-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.branchen-card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem 1.25rem;box-shadow:var(--shadow-sm);transition:var(--transition);display:flex;flex-direction:column;gap:.5rem}
+.branchen-card:hover{border-color:var(--color-accent);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.branchen-card-icon{font-size:2rem;margin-bottom:.25rem}
+.branchen-card h3{font-size:.975rem}
+.branchen-card p{font-size:.85rem;color:var(--color-text-light);max-width:none;flex:1}
+/* Trust */
+.trust-features{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.trust-feature{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;background:var(--color-bg-light);border-radius:var(--radius);border:1px solid var(--color-border);font-size:.9rem;font-weight:500}
+.trust-feature-icon{font-size:1.25rem;flex-shrink:0}
+.trust-placeholder{text-align:center;padding:2rem;background:var(--color-bg-light);border:2px dashed var(--color-border);border-radius:var(--radius-lg);color:var(--color-text-light);font-size:.9rem}
+/* CTA Zwischen */
+.cta-between{background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-primary-mid) 100%);padding:5rem 0;text-align:center}
+.cta-between-inner h2{color:#fff;margin-bottom:1rem}
+.cta-between-inner p{color:rgba(255,255,255,.75);margin:0 auto 2rem;max-width:540px}
+/* CTA Abschluss */
+.cta-section{background:var(--color-primary);padding:5rem 0;text-align:center}
+.cta-inner h2{color:#fff;margin-bottom:1rem}
+.cta-inner p{color:rgba(255,255,255,.75);margin:0 auto 2rem;max-width:520px}
+.cta-group{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:1.25rem}
+.cta-note{font-size:.8rem;color:rgba(255,255,255,.5);max-width:none}
+/* Kontakt */
+.contact-section-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:3.5rem;align-items:start}
+.contact-section-info h2{margin-bottom:.75rem}
+.contact-section-info p{color:var(--color-text-light);font-size:.95rem;margin-bottom:1.5rem}
+.contact-detail{display:flex;align-items:center;gap:.75rem;margin-bottom:.875rem;font-size:.9rem}
+.contact-detail a{color:var(--color-text);font-weight:500}
+.contact-note{margin-top:1.75rem;padding:1.25rem 1.5rem;background:var(--color-primary-light);border-radius:var(--radius-lg);border:1px solid #c8e6f5}
+.contact-note h4{font-size:.9rem;margin-bottom:.75rem;color:var(--color-primary)}
+.contact-note ul{display:flex;flex-direction:column;gap:.35rem}
+.contact-note li{font-size:.875rem;color:var(--color-primary-mid);padding-left:1.25rem;position:relative}
+.contact-note li::before{content:'✓';position:absolute;left:0;font-weight:700}
+.contact-section-form{background:#fff;border-radius:var(--radius-xl);padding:2rem;box-shadow:var(--shadow-lg);border:1px solid var(--color-border)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{margin-bottom:1.1rem}
+.form-group label{display:block;font-size:.875rem;font-weight:600;margin-bottom:.4rem}
+.optional{font-weight:400;color:var(--color-text-light);font-size:.8rem}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:.75rem 1rem;border:1.5px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-family);font-size:.975rem;color:var(--color-text);background:#fff;transition:var(--transition);appearance:none}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A6878' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--color-accent);box-shadow:0 0 0 3px rgba(45,156,219,.15)}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-checkbox{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.5rem}
+.form-checkbox input[type="checkbox"]{width:auto;height:auto;padding:0;margin-top:3px;flex-shrink:0;accent-color:var(--color-accent)}
+.form-checkbox label{font-size:.825rem;font-weight:400;color:var(--color-text-light);margin-bottom:0;line-height:1.5}
+.form-checkbox a{color:var(--color-accent);text-decoration:underline}
+.form-microcopy{font-size:.775rem;color:var(--color-text-light);margin-top:.75rem;text-align:center;max-width:none}
+/* FAQ */
+.faq-list{max-width:820px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--color-border)}
+.faq-question{width:100%;text-align:left;background:none;border:none;padding:1.25rem 0;font-family:var(--font-family);font-size:.975rem;font-weight:600;color:var(--color-text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-question::after{content:'+';font-size:1.4rem;font-weight:400;color:var(--color-accent);flex-shrink:0;transition:var(--transition)}
+.faq-item.open .faq-question::after{content:'−'}
+.faq-answer{display:none;padding-bottom:1.25rem;color:var(--color-text-light);font-size:.925rem;line-height:1.75;max-width:none}
+.faq-item.open .faq-answer{display:block}
+/* Footer */
+.site-footer{background:var(--color-primary);color:rgba(255,255,255,.8);padding-top:5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3.5rem}
+.footer-brand .logo-text{color:#fff;font-size:1.05rem}
+.footer-brand .logo-sub{color:rgba(255,255,255,.5)}
+.footer-brand p{font-size:.875rem;color:rgba(255,255,255,.6);margin:1rem 0;max-width:280px}
+.footer-brand address a{color:rgba(255,255,255,.75);font-size:.875rem;line-height:2;display:block}
+.footer-nav h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);margin-bottom:1rem}
+.footer-nav a{display:block;font-size:.875rem;color:rgba(255,255,255,.7);padding:.3rem 0}
+.footer-nav a:hover{color:var(--color-accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 0}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.35);max-width:none}
+/* Utility */
+.text-center{text-align:center}
+.text-center p{margin:0 auto}
+.mt-sm{margin-top:1rem}
+.mt-md{margin-top:2rem}
+/* Responsive */
+@media(max-width:1024px){
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-brand{grid-column:span 2}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .branchen-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-section-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .main-nav,.header-cta{display:none}
+  .nav-toggle{display:flex}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-visual{order:-1}
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .problem-grid{grid-template-columns:1fr}
+  .mechanism-steps{flex-direction:column;gap:.75rem}
+  .step-arrow{transform:rotate(90deg);margin:0 auto}
+  .zielgruppen-split{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:1.25rem}
+  .branchen-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-features{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-brand{grid-column:span 1}
+  .form-row{grid-template-columns:1fr}
+  .cta-group{flex-direction:column;align-items:center}
+  .cta-group .btn{width:100%;max-width:360px}
+  .hero-actions{flex-direction:column}
+  .hero-actions .btn{width:100%;text-align:center}
+  .section{padding:3rem 0}
+}
+@media(max-width:480px){
+  .hero-service-grid{grid-template-columns:repeat(2,1fr)}
+  .branchen-grid{grid-template-columns:1fr}
+  .zielgruppe-panel{padding:2rem 1.5rem}
+  .contact-section-form{padding:1.5rem}
+  .site-header .header-inner{height:60px}
+}
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#start" class="logo">
+      <span class="logo-text">
+        Thomas Mündlein Reinigung
+        <span class="logo-sub">Reinigungsfirma aus Solingen</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#zielgruppen">Für Gewerbe</a>
+      <a href="#zielgruppen">Für Privatkunden</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="#kontakt" class="btn btn-accent header-cta">Jetzt Anfrage senden</a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" hidden>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#zielgruppen">Für Gewerbe</a>
+    <a href="#zielgruppen">Für Privatkunden</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="btn btn-accent">Jetzt Anfrage senden</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="start">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">Reinigungsfirma aus Solingen</span>
+      <h1>Reinigungsfirma in Solingen –<br>saubere Räume ohne ständiges&nbsp;Hinterhertelefonieren</h1>
+      <p class="lead">Thomas Mündlein Reinigung unterstützt Gewerbekunden und Privatkunden mit klar geplanten Reinigungsleistungen für Arztpraxen, Büros, Industrieanlagen, Fitnessstudios und Privathaushalte.</p>
+      <ul class="hero-bullets">
+        <li>Persönliche Abstimmung statt anonymer Massenabwicklung</li>
+        <li>Reinigung für Gewerbe und Privatkunden</li>
+        <li>Für Solingen und Umgebung</li>
+        <li>Klare Anfrage, klare Rückmeldung, klare nächsten Schritte</li>
+      </ul>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-accent btn-lg">Jetzt Reinigungsanfrage senden</a>
+        <a href="tel:+49000000000" class="btn btn-outline btn-lg">Direkt anrufen</a>
+      </div>
+      <p class="hero-trust-line">Unverbindlich anfragen &nbsp;·&nbsp; Persönlicher Ansprechpartner &nbsp;·&nbsp; Regional vor Ort</p>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img">
+        <span style="font-size:4rem;">🧹</span>
+        <p style="margin-top:.75rem;font-size:.875rem;color:var(--color-primary-mid);">Hier kommt Ihr Hero-Bild rein<br><small>/assets/images/hero/reinigung-hero.webp</small></p>
+      </div>
+      <div class="hero-service-grid">
+        <div class="hero-service-badge"><span class="badge-icon">🏥</span><span>Praxisreinigung</span></div>
+        <div class="hero-service-badge"><span class="badge-icon">🏢</span><span>Büroreinigung</span></div>
+        <div class="hero-service-badge"><span class="badge-icon">🏠</span><span>Privathaushalte</span></div>
+        <div class="hero-service-badge"><span class="badge-icon">💪</span><span>Fitnessstudios</span></div>
+        <div class="hero-service-badge"><span class="badge-icon">🏭</span><span>Industrieanlagen</span></div>
+        <div class="hero-service-badge"><span class="badge-icon">🏗️</span><span>Treppenhäuser</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section section-light" id="problem">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Das kennen Sie?</span>
+      <h2>Wenn Reinigung unzuverlässig ist, kostet das mehr als nur Sauberkeit</h2>
+      <p class="lead">Viele Kunden suchen nicht einfach nur jemanden, der putzt. Sie suchen jemanden, der mitdenkt, zuverlässig erscheint und die vereinbarten Bereiche sauber hinterlässt.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card"><div class="problem-card-icon">⚠️</div><h3>Wechselnde Qualität</h3><p>Wenn mal gründlich und mal oberflächlich gereinigt wird, entsteht Unsicherheit und ständiger Nachprüfaufwand.</p></div>
+      <div class="problem-card"><div class="problem-card-icon">🔄</div><h3>Ständiges Nachkontrollieren</h3><p>Reinigung soll entlasten, nicht zusätzliche Arbeit machen. Wer täglich nachkontrolliert, verliert wertvolle Zeit.</p></div>
+      <div class="problem-card"><div class="problem-card-icon">📋</div><h3>Unklare Absprachen</h3><p>Ohne klaren Plan bleiben wichtige Bereiche schnell liegen – besonders in Sanitäranlagen und Gemeinschaftsflächen.</p></div>
+      <div class="problem-card"><div class="problem-card-icon">👥</div><h3>Schlechter Eindruck bei Kunden</h3><p>Unsaubere Räume wirken direkt unprofessionell – ob in einer Arztpraxis, einem Büro oder einem Fitnessstudio.</p></div>
+      <div class="problem-card"><div class="problem-card-icon">🧪</div><h3>Hygienische Anforderungen</h3><p>Praxen, Studios und Gemeinschaftsbereiche brauchen verlässliche Sauberkeit – nicht nur das Nötigste.</p></div>
+    </div>
+    <div class="text-center mt-md"><a href="#kontakt" class="btn btn-accent">Reinigungsbedarf kurz schildern</a></div>
+  </div>
+</section>
+
+<!-- MECHANISMUS -->
+<section class="section" id="mechanismus">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Der Mündlein-Sauberkeitsablauf</span>
+      <h2>Unser Ansatz: klare Reinigung nach Absprache statt Reinigung nach Bauchgefühl</h2>
+      <p class="lead">Thomas Mündlein Reinigung arbeitet mit einem einfachen, verständlichen Ablauf: Bedarf klären, Flächen besprechen, Umfang festlegen und zuverlässig umsetzen.</p>
+    </div>
+    <div class="mechanism-steps">
+      <div class="mechanism-step"><div class="step-num">1</div><h3>Anfrage senden</h3><p>Der Kunde beschreibt kurz Objekt, Ort und gewünschte Reinigung – ohne Druck.</p></div>
+      <span class="step-arrow" aria-hidden="true">→</span>
+      <div class="mechanism-step"><div class="step-num">2</div><h3>Persönliche Rückmeldung</h3><p>Die wichtigsten Details werden persönlich geklärt. Kein Callcenter.</p></div>
+      <span class="step-arrow" aria-hidden="true">→</span>
+      <div class="mechanism-step"><div class="step-num">3</div><h3>Reinigungsumfang abstimmen</h3><p>Räume, Häufigkeit und Anforderungen werden gemeinsam festgelegt.</p></div>
+      <span class="step-arrow" aria-hidden="true">→</span>
+      <div class="mechanism-step"><div class="step-num">4</div><h3>Reinigung umsetzen</h3><p>Das Team arbeitet nach klarer Absprache – beide Seiten wissen, was erwartet wird.</p></div>
+    </div>
+    <div class="text-center mt-md">
+      <a href="#kontakt" class="btn btn-accent">Jetzt unverbindlich anfragen</a>
+      <p class="trust-note">Unverbindlich &nbsp;·&nbsp; Persönlich &nbsp;·&nbsp; Ohne automatische Vertragsbindung</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="section section-light" id="leistungen">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Unsere Leistungen</span>
+      <h2>Reinigungsleistungen für Gewerbe, Praxen, Studios und Privathaushalte</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><span class="card-icon">🏢</span><h3>Büroreinigung</h3><p>Für saubere Arbeitsplätze, gepflegte Besprechungsräume und einen professionellen Eindruck bei Mitarbeitern und Besuchern.</p></div>
+      <div class="card"><span class="card-icon">🏥</span><h3>Praxisreinigung</h3><p>Für Arztpraxen und medizinische Räume, bei denen Sauberkeit, Struktur und Verlässlichkeit besonders wichtig sind.</p></div>
+      <div class="card"><span class="card-icon">🏭</span><h3>Industriereinigung</h3><p>Für gewerbliche und industrielle Bereiche, in denen Schmutz, Staub und Arbeitsrückstände regelmäßig entfernt werden müssen.</p></div>
+      <div class="card"><span class="card-icon">💪</span><h3>Reinigung für Fitnessstudios</h3><p>Für Trainingsflächen, Umkleiden, Sanitärbereiche und Empfangszonen, die täglich von vielen Menschen genutzt werden.</p></div>
+      <div class="card"><span class="card-icon">🏠</span><h3>Privathaushalte</h3><p>Für Menschen, die im Alltag Entlastung wünschen und ihre Wohnräume zuverlässig reinigen lassen möchten.</p></div>
+      <div class="card"><span class="card-icon">🏗️</span><h3>Treppenhaus- und Unterhaltsreinigung</h3><p>Für gepflegte Eingangsbereiche, Flure, Treppenhäuser und regelmäßig genutzte Gemeinschaftsflächen.</p></div>
+    </div>
+    <div class="text-center mt-md">
+      <p style="color:var(--color-text-light);font-size:.9rem;margin-bottom:1rem">Nicht sicher, welche Reinigung passt?</p>
+      <a href="#kontakt" class="btn btn-accent">Reinigungsbedarf prüfen lassen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ZIELGRUPPEN -->
+<section class="section" id="zielgruppen">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Für wen</span>
+      <h2>Für wen Thomas Mündlein Reinigung geeignet ist</h2>
+    </div>
+    <div class="zielgruppen-split">
+      <div class="zielgruppe-panel zielgruppe-panel--dark">
+        <span class="panel-icon">🏢</span>
+        <h3>Für Gewerbekunden</h3>
+        <p>Gewerbekunden brauchen Reinigung, die planbar ist. Es geht um Eindruck, Hygiene, Verlässlichkeit und weniger Abstimmungsaufwand.</p>
+        <ul class="zielgruppe-list">
+          <li>Arztpraxen und medizinische Einrichtungen</li>
+          <li>Büros und Kanzleien</li>
+          <li>Fitnessstudios</li>
+          <li>Industrieanlagen</li>
+          <li>Kleinere und mittlere Betriebe</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline-white">Gewerbliche Reinigung anfragen</a>
+      </div>
+      <div class="zielgruppe-panel zielgruppe-panel--light">
+        <span class="panel-icon">🏠</span>
+        <h3>Für Privatkunden</h3>
+        <p>Privatkunden erhalten Unterstützung im Alltag und saubere Wohnräume, ohne alles selbst organisieren zu müssen.</p>
+        <ul class="zielgruppe-list zielgruppe-list--dark">
+          <li>Wohnungen und Häuser</li>
+          <li>Regelmäßige Haushaltsreinigung</li>
+          <li>Unterstützung bei hoher Alltagsbelastung</li>
+          <li>Punktuelle Grundreinigung nach Absprache</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-accent">Private Reinigung anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM WIR -->
+<section class="section section-primary" id="warum">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color:rgba(255,255,255,.55)">Unser Versprechen</span>
+      <h2>Warum Kunden aus Solingen eine persönliche Reinigungsfirma wählen</h2>
+    </div>
+    <div class="grid-3">
+      <div class="why-card"><span class="why-icon">📍</span><h3>Regional in Solingen</h3><p>Kurze Wege, persönliche Nähe und direkter Kontakt – kein anonymes Unternehmen aus der Ferne.</p></div>
+      <div class="why-card"><span class="why-icon">💬</span><h3>Persönliche Absprache</h3><p>Keine anonyme Abwicklung, sondern klare Rückmeldung. Sie wissen immer, was als Nächstes passiert.</p></div>
+      <div class="why-card"><span class="why-icon">🔄</span><h3>Für Gewerbe und Privat</h3><p>Flexible Reinigung für unterschiedliche Anforderungen – von der Arztpraxis bis zum Privathaushalt.</p></div>
+      <div class="why-card"><span class="why-icon">📋</span><h3>Klare Abläufe</h3><p>Vom Erstkontakt bis zur Umsetzung nachvollziehbar. Kein Rätselraten darüber, was wann passiert.</p></div>
+      <div class="why-card"><span class="why-icon">✅</span><h3>Sauberkeit mit Verantwortung</h3><p>Räume werden nach vereinbartem Bedarf sorgfältig gereinigt – nicht nur oberflächlich.</p></div>
+      <div class="why-card"><span class="why-icon">🤝</span><h3>Anfrage ohne Druck</h3><p>Der erste Kontakt dient dazu, den Bedarf zu verstehen. Kein Verkaufsdruck.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section class="section" id="ablauf">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Schritt für Schritt</span>
+      <h2>So einfach läuft Ihre Reinigungsanfrage ab</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-number">1</div><h3>Anfrage senden</h3><p>Sie beschreiben kurz, welche Räume oder Flächen gereinigt werden sollen.</p></div>
+      <div class="step"><div class="step-number">2</div><h3>Rückmeldung erhalten</h3><p>Wir klären die wichtigsten Fragen zu Ort, Umfang, Häufigkeit und Besonderheiten.</p></div>
+      <div class="step"><div class="step-number">3</div><h3>Reinigung abstimmen</h3><p>Gemeinsam wird festgelegt, was regelmäßig oder einmalig gereinigt werden soll.</p></div>
+      <div class="step"><div class="step-number">4</div><h3>Umsetzung starten</h3><p>Die Reinigung erfolgt nach klarer Absprache und mit persönlichem Ansprechpartner.</p></div>
+    </div>
+    <div class="text-center mt-md">
+      <a href="#kontakt" class="btn btn-accent">Jetzt Anfrage starten</a>
+      <p class="trust-note">Unverbindlich &nbsp;·&nbsp; Persönlich &nbsp;·&nbsp; Ohne automatische Vertragsbindung</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHEN -->
+<section class="section section-light" id="branchen">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Branchen</span>
+      <h2>Reinigung für unterschiedliche Anforderungen</h2>
+    </div>
+    <div class="branchen-grid">
+      <div class="branchen-card"><div class="branchen-card-icon">🏥</div><h3>Arztpraxen</h3><p>Hygiene, Wartebereiche, Behandlungsräume – diskrete und strukturierte Reinigung.</p><a href="#kontakt" class="btn-link">Anfragen →</a></div>
+      <div class="branchen-card"><div class="branchen-card-icon">🏢</div><h3>Büros</h3><p>Arbeitsplätze, Besprechungsräume, Küchenbereiche – regelmäßige Unterhaltsreinigung.</p><a href="#kontakt" class="btn-link">Anfragen →</a></div>
+      <div class="branchen-card"><div class="branchen-card-icon">🏭</div><h3>Industrieanlagen</h3><p>Arbeitsflächen nach Absprache – robuste Reinigung für starke Schmutzbelastung.</p><a href="#kontakt" class="btn-link">Anfragen →</a></div>
+      <div class="branchen-card"><div class="branchen-card-icon">💪</div><h3>Fitnessstudios</h3><p>Trainingsbereiche, Umkleiden, Sanitärbereiche – täglich stark frequentierte Flächen.</p><a href="#kontakt" class="btn-link">Anfragen →</a></div>
+      <div class="branchen-card"><div class="branchen-card-icon">🏠</div><h3>Privathaushalte</h3><p>Wohnräume, Küche, Bad – echte Entlastung im Alltag für Menschen mit wenig Zeit.</p><a href="#kontakt" class="btn-link">Anfragen →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- VERTRAUEN -->
+<section class="section" id="vertrauen">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Vertrauen</span>
+      <h2>Vertrauen entsteht durch klare Absprachen</h2>
+      <p class="lead">Gute Reinigung beginnt mit einer sauberen Abstimmung. Deshalb wird vorab geklärt, welche Räume wichtig sind, welche Anforderungen bestehen und wie die nächsten Schritte aussehen.</p>
+    </div>
+    <div class="trust-features">
+      <div class="trust-feature"><span class="trust-feature-icon">👤</span><span>Persönlicher Ansprechpartner</span></div>
+      <div class="trust-feature"><span class="trust-feature-icon">📋</span><span>Klare Leistungsabstimmung</span></div>
+      <div class="trust-feature"><span class="trust-feature-icon">🎯</span><span>Reinigung nach Bedarf</span></div>
+      <div class="trust-feature"><span class="trust-feature-icon">🔁</span><span>Regelmäßig und einmalig möglich</span></div>
+      <div class="trust-feature"><span class="trust-feature-icon">📍</span><span>Regionale Nähe in Solingen</span></div>
+      <div class="trust-feature"><span class="trust-feature-icon">💬</span><span>Verständliche Kommunikation</span></div>
+    </div>
+    <div class="trust-placeholder"><p>📸 &nbsp;Hier werden nach Absprache Projektbilder, Referenzen und Kundenbewertungen eingebunden.</p></div>
+  </div>
+</section>
+
+<!-- CTA ZWISCHEN -->
+<section class="cta-between">
+  <div class="container cta-between-inner">
+    <h2>Sie suchen eine Reinigung in Solingen, auf die Sie sich verlassen können?</h2>
+    <p>Beschreiben Sie kurz Ihren Reinigungsbedarf. Wir melden uns persönlich zurück und klären die nächsten Schritte.</p>
+    <div class="cta-group">
+      <a href="#kontakt" class="btn btn-accent btn-lg">Jetzt Anfrage senden</a>
+      <a href="tel:+49000000000" class="btn btn-outline-white btn-lg">Direkt anrufen</a>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKTFORMULAR -->
+<section class="section section-light" id="kontakt">
+  <div class="container">
+    <div class="contact-section-grid">
+      <div class="contact-section-info">
+        <span class="eyebrow">Anfrage senden</span>
+        <h2>Reinigungsanfrage senden</h2>
+        <p>Je genauer Ihre Angaben sind, desto besser kann der Reinigungsbedarf eingeschätzt werden.</p>
+        <div class="contact-detail"><span>📞</span> <a href="tel:+49000000000">[Telefon einfügen]</a></div>
+        <div class="contact-detail"><span>✉️</span> <a href="mailto:info@muendlein-reinigung.de">[E-Mail einfügen]</a></div>
+        <div class="contact-detail"><span>📍</span> <span>Solingen und Umgebung</span></div>
+        <div class="contact-detail"><span>🕐</span> <span>Mo–Fr: 8:00 – 18:00 Uhr</span></div>
+        <div class="contact-note">
+          <h4>Was Sie nach der Anfrage erwartet</h4>
+          <ul>
+            <li>Persönliche Rückmeldung</li>
+            <li>Klärung Ihrer Anforderungen</li>
+            <li>Verständliche nächste Schritte</li>
+            <li>Kein Verkaufsdruck</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-section-form">
+        <form action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="p-name">Ihr Name *</label><input type="text" id="p-name" name="name" placeholder="Max Mustermann" required></div>
+            <div class="form-group"><label for="p-firma">Unternehmen <span class="optional">(optional)</span></label><input type="text" id="p-firma" name="unternehmen" placeholder="Firma GmbH"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="p-tel">Telefon *</label><input type="tel" id="p-tel" name="telefon" placeholder="+49 212 000 00 00" required></div>
+            <div class="form-group"><label for="p-mail">E-Mail <span class="optional">(optional)</span></label><input type="email" id="p-mail" name="email" placeholder="max@beispiel.de"></div>
+          </div>
+          <div class="form-group"><label for="p-ort">Ort / Einsatzort *</label><input type="text" id="p-ort" name="ort" placeholder="z. B. Solingen-Mitte, Ohligs …" required></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="p-leistung">Ich suche Reinigung für:</label>
+              <select id="p-leistung" name="leistung">
+                <option value="">Bitte auswählen …</option>
+                <option>Arztpraxis</option><option>Büro</option>
+                <option>Industrieanlage</option><option>Fitnessstudio</option>
+                <option>Privathaushalt</option><option>Treppenhaus</option><option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="p-art">Reinigungsart:</label>
+              <select id="p-art" name="art">
+                <option value="">Bitte auswählen …</option>
+                <option>Regelmäßig</option><option>Einmalig</option><option>Noch unklar</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label for="p-msg">Kurze Beschreibung *</label><textarea id="p-msg" name="nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Besondere Anforderungen?" required></textarea></div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="p-dsgvo" name="datenschutz" required>
+            <label for="p-dsgvo">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zu. *</label>
+          </div>
+          <button type="submit" class="btn btn-accent btn-lg" style="width:100%">Anfrage senden – wir melden uns mit den nächsten Schritten</button>
+          <p class="form-microcopy">Ihre Anfrage ist unverbindlich. Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2>Ihre Fragen – unsere Antworten</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question">Für welche Orte bietet Thomas Mündlein Reinigung Leistungen an?</button><div class="faq-answer">Unser Schwerpunkt liegt in Solingen und der näheren Umgebung. Sprechen Sie uns direkt an – wir klären gerne, ob wir auch in Ihrer Lage tätig werden können.</div></div>
+      <div class="faq-item"><button class="faq-question">Reinigen Sie auch Arztpraxen?</button><div class="faq-answer">Ja. Praxisreinigung gehört zu unseren Leistungen. Wir berücksichtigen dabei die besonderen Anforderungen an Hygiene, Diskretion und strukturierte Abläufe in medizinischen Räumen.</div></div>
+      <div class="faq-item"><button class="faq-question">Sind regelmäßige Reinigungen möglich?</button><div class="faq-answer">Ja. Ob wöchentlich, zweiwöchentlich oder in einem anderen Rhythmus – wir stimmen die Häufigkeit gemeinsam auf Ihren Bedarf ab.</div></div>
+      <div class="faq-item"><button class="faq-question">Kann ich auch als Privatperson anfragen?</button><div class="faq-answer">Ja. Wir reinigen sowohl für Gewerbekunden als auch für Privathaushalte.</div></div>
+      <div class="faq-item"><button class="faq-question">Ist die erste Anfrage unverbindlich?</button><div class="faq-answer">Ja, vollständig. Die Anfrage und das Gespräch danach sind kostenlos und unverbindlich. Sie entscheiden in Ruhe, ob und wie es weitergeht.</div></div>
+      <div class="faq-item"><button class="faq-question">Reinigen Sie auch Fitnessstudios und gewerbliche Flächen?</button><div class="faq-answer">Ja. Wir reinigen Fitnessstudios, Büros, Industrieanlagen und weitere gewerbliche Flächen. Sprechen Sie uns an.</div></div>
+      <div class="faq-item"><button class="faq-question">Was sollte ich in der Anfrage angeben?</button><div class="faq-answer">Hilfreich sind: der Ort, welche Räume gereinigt werden sollen, ob regelmäßig oder einmalig, und eventuelle Besonderheiten.</div></div>
+      <div class="faq-item"><button class="faq-question">Wie läuft die Abstimmung vor dem ersten Reinigungstermin ab?</button><div class="faq-answer">Nach Ihrer Anfrage melden wir uns persönlich. Wir besprechen gemeinsam, was gereinigt werden soll, wie oft und was zu beachten ist. Erst danach starten wir.</div></div>
+    </div>
+    <div class="text-center mt-md">
+      <p style="color:var(--color-text-light);font-size:.9rem;margin-bottom:1rem">Noch eine offene Frage? Sprechen Sie uns direkt an.</p>
+      <a href="#kontakt" class="btn btn-accent">Jetzt anfragen</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINALER CTA -->
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2>Saubere Räume beginnen mit einer kurzen Anfrage</h2>
+    <p>Ob Gewerbefläche, Praxis, Büro, Fitnessstudio oder Privathaushalt: Senden Sie Ihre Anfrage und erhalten Sie eine persönliche Rückmeldung.</p>
+    <div class="cta-group">
+      <a href="#kontakt" class="btn btn-accent btn-lg">Jetzt Reinigungsanfrage senden</a>
+      <a href="tel:+49000000000" class="btn btn-outline-white btn-lg">Direkt anrufen</a>
+    </div>
+    <p class="cta-note">Regional in Solingen &bull; Für Gewerbe und Privat &bull; Persönliche Rückmeldung</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text">Thomas Mündlein Reinigung<span class="logo-sub">Reinigungsfirma aus Solingen</span></span>
+      <p>Professionelle Reinigung für Gewerbe und Privatkunden in Solingen und Umgebung. Persönlich abgestimmt, zuverlässig umgesetzt.</p>
+      <address>
+        <a href="tel:+49000000000">[Telefon einfügen]</a>
+        <a href="mailto:info@muendlein-reinigung.de">[E-Mail einfügen]</a>
+      </address>
+    </div>
+    <div class="footer-nav">
+      <h3>Leistungen</h3>
+      <a href="#leistungen">Büroreinigung</a>
+      <a href="#leistungen">Praxisreinigung</a>
+      <a href="#leistungen">Industriereinigung</a>
+      <a href="#leistungen">Fitnessstudios</a>
+      <a href="#leistungen">Privathaushalte</a>
+    </div>
+    <div class="footer-nav">
+      <h3>Unternehmen</h3>
+      <a href="#zielgruppen">Für Gewerbe</a>
+      <a href="#zielgruppen">Für Privatkunden</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Anfrage senden</a>
+    </div>
+    <div class="footer-nav">
+      <h3>Rechtliches</h3>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="cy">2025</span> Thomas Mündlein Reinigung, Solingen. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('cy').textContent = new Date().getFullYear();
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var nav    = document.getElementById('mobile-nav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var exp = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !exp);
+      nav.hidden = exp;
+    });
+  }
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+      if(!open) item.classList.add('open');
+    });
+  });
+})();
+</script>
+</body>
+</html>
