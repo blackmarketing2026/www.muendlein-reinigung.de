@@ -1,0 +1,54 @@
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+
+RewriteEngine On
+
+DirectoryIndex index.shtml index.html
+
+# Trailing-Slash entfernen (ausser Root)
+RewriteCond %{REQUEST_URI} ^/(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Direkte Aufrufe mit .shtml auf saubere URL weiterleiten
+RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.shtml[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# Direkte Aufrufe mit .html auf saubere URL weiterleiten
+RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.html[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# Aufruf ohne Dateiendung auf .shtml leiten
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.shtml -f
+RewriteRule ^(.+?)/?$ $1.shtml [L]
+
+# Fallback auf .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# 404-Fehlerseite
+ErrorDocument 404 /index.shtml
+
+# Sicherheits-Header
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Komprimierung
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml
+</IfModule>
+
+# Browser-Cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

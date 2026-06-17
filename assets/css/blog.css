@@ -1,0 +1,164 @@
+/* ============================================================
+   Mündlein Reinigung – Blog-Styles
+   ============================================================ */
+
+/* --- Blog-Übersichtsseite --- */
+.blog-hero {
+  background: linear-gradient(135deg, #e8f0fa 0%, #f0f4f8 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.blog-hero h1 { margin-bottom: 1rem; }
+.blog-hero p  { color: var(--color-text-light); margin: 0 auto; }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.blog-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+.blog-card-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-card-image img { transform: scale(1.04); }
+
+.blog-card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+
+.blog-card-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.blog-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.blog-card p { font-size: 0.9rem; color: var(--color-text-light); flex: 1; }
+
+.blog-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 1.25rem;
+}
+
+.blog-card-link:hover { color: var(--color-accent); }
+
+/* --- Blog-Artikel --- */
+.blog-article-hero {
+  background: linear-gradient(135deg, #e8f0fa 0%, #f0f4f8 100%);
+  padding: 4rem 0;
+}
+
+.blog-article-hero h1 { margin-bottom: 1rem; max-width: 760px; }
+.blog-article-hero .lead { margin-bottom: 1.5rem; }
+
+.article-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.article-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.article-content p {
+  color: var(--color-text-light);
+  margin-bottom: 1.25rem;
+  max-width: none;
+}
+
+.article-content ul,
+.article-content ol {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.article-content ul li,
+.article-content ol li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-light);
+  font-size: 0.975rem;
+}
+
+.article-content ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.article-content ol { counter-reset: item; }
+.article-content ol li { counter-increment: item; }
+.article-content ol li::before {
+  content: counter(item) '.';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.article-content img {
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* --- Blog-FAQ im Artikel --- */
+.article-faq { margin: 3rem 0; }
+.article-faq h2 { margin-bottom: 1.5rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .blog-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .article-content { padding: 2.5rem 0; }
+}

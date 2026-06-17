@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!--#include virtual="/includes/head.shtml" -->
+  <title>Vielen Dank – Mündlein Reinigung | Anfrage erhalten</title>
+  <meta name="description" content="Ihre Anfrage ist bei uns eingegangen. Wir melden uns schnellstmöglich bei Ihnen.">
+  <meta name="robots" content="noindex, follow">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <section class="danke-hero">
+    <div class="container">
+      <div class="danke-icon">✅</div>
+      <h1>Vielen Dank für Ihre Anfrage!</h1>
+      <p class="lead" style="margin: 1rem auto 2rem;">Ihre Nachricht ist bei uns angekommen. Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.</p>
+      <a href="/" class="btn btn-primary">Zurück zur Startseite</a>
+    </div>
+  </section>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+  <!--#include virtual="/includes/tracking.shtml" -->
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

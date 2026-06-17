@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!--#include virtual="/includes/head.shtml" -->
+  <title>Leistungen – Mündlein Reinigung | Büro, Gebäude, Glas und mehr</title>
+  <meta name="description" content="Übersicht aller Reinigungsleistungen: Büroreinigung, Gebäudereinigung, Glasreinigung, Grundreinigung und Sonderreinigung. Jetzt anfragen.">
+  <link rel="canonical" href="https://www.mündlein-reinigung.de/leistungen">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <!-- Hero -->
+  <section style="background: linear-gradient(135deg, #e8f0fa 0%, #f0f4f8 100%); padding: 4rem 0;">
+    <div class="container">
+      <p class="eyebrow">Was wir anbieten</p>
+      <h1>Unsere Reinigungsleistungen</h1>
+      <p class="lead" style="margin-top: 1rem; max-width: 580px;">Von der regelmäßigen Büroreinigung bis zur einmaligen Sonderreinigung – wir finden die passende Lösung für Ihren Bedarf.</p>
+      <a href="/kontakt" class="btn btn-primary" style="margin-top: 1.5rem;">Jetzt anfragen</a>
+    </div>
+  </section>
+
+  <!-- Büroreinigung -->
+  <section class="section" id="bueroreinigung">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Leistung 1</p>
+        <h2>Büroreinigung</h2>
+        <p class="lead">Damit Ihr Team jeden Morgen sauber starten kann.</p>
+        <p style="color: var(--color-text-light); margin-top: 1rem;">Wir reinigen Ihre Büroräume regelmäßig und zuverlässig – nach Ihrem Zeitplan, mit einem festen Ansprechpartner. Kein Chaos, keine Überraschungen.</p>
+        <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li style="color: var(--color-text-light); padding-left: 1.5rem; position: relative;">✓ &nbsp;Böden, Oberflächen, Sanitäranlagen</li>
+          <li style="color: var(--color-text-light); padding-left: 1.5rem; position: relative;">✓ &nbsp;Küche und Pausenräume</li>
+          <li style="color: var(--color-text-light); padding-left: 1.5rem; position: relative;">✓ &nbsp;Eingangsbereiche und Flure</li>
+          <li style="color: var(--color-text-light); padding-left: 1.5rem; position: relative;">✓ &nbsp;Flexibler Reinigungsrhythmus</li>
+        </ul>
+        <a href="/kontakt" class="btn btn-primary" style="margin-top: 1.75rem;">Anfrage senden</a>
+      </div>
+      <div>
+        <img src="/assets/images/hero/leistung-bueroreinigung.webp" alt="Büroreinigung durch Mündlein Reinigung" style="border-radius: 16px; width: 100%; object-fit: cover; height: 360px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gebäudereinigung -->
+  <section class="section section-light" id="gebaeudereinigung">
+    <div class="container contact-grid">
+      <div>
+        <img src="/assets/images/hero/leistung-gebaeudereinigung.webp" alt="Gebäudereinigung – Treppenhäuser und Gemeinschaftsflächen" style="border-radius: 16px; width: 100%; object-fit: cover; height: 360px;">
+      </div>
+      <div>
+        <p class="eyebrow">Leistung 2</p>
+        <h2>Gebäudereinigung</h2>
+        <p class="lead">Gepflegte Außenwirkung für Ihr Objekt.</p>
+        <p style="color: var(--color-text-light); margin-top: 1rem;">Treppenhäuser, Aufzüge, Gemeinschaftsflächen und Eingangsbereiche – wir sorgen dafür, dass Ihr Gebäude einen guten ersten Eindruck macht.</p>
+        <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li style="color: var(--color-text-light);">✓ &nbsp;Treppenhäuser und Flure</li>
+          <li style="color: var(--color-text-light);">✓ &nbsp;Tiefgaragen und Außenanlagen</li>
+          <li style="color: var(--color-text-light);">✓ &nbsp;Gemeinschaftsräume</li>
+          <li style="color: var(--color-text-light);">✓ &nbsp;Regelmäßige oder einmalige Reinigung</li>
+        </ul>
+        <a href="/kontakt" class="btn btn-primary" style="margin-top: 1.75rem;">Anfrage senden</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grundreinigung -->
+  <section class="section" id="grundreinigung">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Leistung 3</p>
+        <h2>Grundreinigung</h2>
+        <p class="lead">Tiefenreinigung für Räume, die es wirklich brauchen.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h3>Gründlich bis in jede Ecke</h3>
+          <p>Wir reinigen alle Bereiche intensiv – nicht nur die Oberflächen.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Geeignet für Umzüge</h3>
+          <p>Einzug oder Auszug – wir hinterlassen Räume im besten Zustand.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>Nach Abnahmeprotokoll</h3>
+          <p>Auf Wunsch mit Dokumentation und Abnahme für Vermieter oder Eigentümer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glasreinigung -->
+  <section class="section section-light" id="glas">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Leistung 4</p>
+        <h2>Glasreinigung</h2>
+        <p class="lead">Streifenfreie Fenster für einen gepflegten ersten Eindruck.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">🪟</div>
+          <h3>Innen- und Außenreinigung</h3>
+          <p>Wir reinigen Ihre Fenster von beiden Seiten – streifenfrei und professionell.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Schaufenster und Fassaden</h3>
+          <p>Auch großflächige Verglasungen und Schaufenster reinigen wir professionell.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alle Leistungen CTA -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Nicht dabei, was Sie suchen?</h2>
+      <p class="lead" style="margin: 1rem auto 2rem;">Sprechen Sie uns einfach an. Wir finden eine Lösung für Ihren konkreten Bedarf.</p>
+      <a href="/kontakt" class="btn btn-primary btn-lg">Jetzt anfragen</a>
+    </div>
+  </section>
+
+  <!--#include virtual="/includes/cta-final.shtml" -->
+
+  <!--#include virtual="/includes/footer.shtml" -->
+  <!--#include virtual="/includes/tracking.shtml" -->
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

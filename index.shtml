@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!--#include virtual="/includes/head.shtml" -->
+  <title>Mündlein Reinigung – Professionelle Gebäudereinigung in Ihrer Region</title>
+  <meta name="description" content="Professionelle Büro- und Gebäudereinigung für Unternehmen und Privatkunden. Zuverlässig, sauber, persönlich. Jetzt kostenlos anfragen.">
+  <link rel="canonical" href="https://www.mündlein-reinigung.de/">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Professionelle Gebäudereinigung</p>
+        <h1>Saubere Räume. Klare Termine. Kein Stress.</h1>
+        <p class="lead">Wir übernehmen die Reinigung Ihrer Büros, Gebäude und Privaträume – zuverlässig, gründlich und mit einem festen Ansprechpartner.</p>
+        <div class="hero-actions">
+          <a href="/kontakt" class="btn btn-primary btn-lg">Jetzt kostenlos anfragen</a>
+          <a href="tel:+4900000000000" class="btn btn-secondary btn-lg">Direkt anrufen</a>
+        </div>
+        <div class="hero-trust">
+          <span>Kostenlose Anfrage</span>
+          <span>Schnelle Rückmeldung</span>
+          <span>Regional vor Ort</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="/assets/images/hero/hero-reinigung-buero.webp" alt="Professionelle Büroreinigung durch Mündlein Reinigung" width="560" height="420" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust-Bar -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner container">
+      <div class="trust-item"><span class="trust-icon">✓</span> Kostenlose Anfrage</div>
+      <div class="trust-item"><span class="trust-icon">⚡</span> Schnelle Rückmeldung</div>
+      <div class="trust-item"><span class="trust-icon">👤</span> Persönliche Beratung</div>
+      <div class="trust-item"><span class="trust-icon">📍</span> Regional im Einsatz</div>
+      <div class="trust-item"><span class="trust-icon">🔒</span> Geprüfte Qualität</div>
+    </div>
+  </div>
+
+  <!-- Problem-Sektion -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Das kennen Sie?</p>
+        <h2>Wenn Reinigung zur Baustelle wird</h2>
+        <p class="lead">Viele Unternehmen und Privatpersonen kämpfen mit denselben Problemen – bevor sie uns anrufen.</p>
+      </div>
+      <div class="problem-list">
+        <div class="problem-item">
+          <span class="problem-item-icon">😟</span>
+          <div>
+            <strong>Unzuverlässige Reinigungskräfte</strong>
+            <p>Termine werden nicht eingehalten, Qualität schwankt täglich.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <span class="problem-item-icon">🕐</span>
+          <div>
+            <strong>Kein fester Ansprechpartner</strong>
+            <p>Niemand ist wirklich zuständig, wenn etwas nicht stimmt.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <span class="problem-item-icon">📋</span>
+          <div>
+            <strong>Unklare Leistungen und Preise</strong>
+            <p>Am Ende kostet es mehr als vereinbart – ohne Erklärung.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <span class="problem-item-icon">🧹</span>
+          <div>
+            <strong>Reinigung als Nebensache</strong>
+            <p>Ihr Team verliert Zeit damit, Reinigungsprobleme zu verwalten.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-md">
+        <p class="lead">Das muss nicht so sein. Wir schaffen klare Verhältnisse – von Anfang an.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Unsere Leistungen</p>
+        <h2>Was wir für Sie übernehmen</h2>
+        <p class="lead">Von der regelmäßigen Büroreinigung bis zur einmaligen Grundreinigung – wir haben die passende Lösung.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Büroreinigung</h3>
+          <p>Regelmäßige Reinigung Ihrer Büroräume, damit Ihr Team jeden Tag sauber starten kann.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏗️</div>
+          <h3>Gebäudereinigung</h3>
+          <p>Treppenhäuser, Gemeinschaftsflächen, Eingangsbereiche – gepflegt und einladend.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✨</div>
+          <h3>Grundreinigung</h3>
+          <p>Tiefenreinigung für Räume, die lange nicht intensiv gereinigt wurden.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🪟</div>
+          <h3>Glasreinigung</h3>
+          <p>Streifenfreie Fenster für einen gepflegten ersten Eindruck bei Kunden und Mitarbeitern.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Haushaltsreinigung</h3>
+          <p>Saubere Wohnräume ohne eigenen Aufwand – regelmäßig oder einmalig.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Sonderreinigung</h3>
+          <p>Bauendreinigung, Umzugsreinigung oder spezielle Anforderungen – wir finden eine Lösung.</p>
+        </div>
+      </div>
+      <div class="text-center mt-md">
+        <a href="/leistungen" class="btn btn-primary">Alle Leistungen ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Warum wir -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Warum Mündlein Reinigung</p>
+        <h2>Das bekommen Sie bei uns – wirklich</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">📞</div>
+          <h3>Fester Ansprechpartner</h3>
+          <p>Sie bekommen eine Person, die für Sie zuständig ist – nicht eine Hotline.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📅</div>
+          <h3>Klare Termine</h3>
+          <p>Wir kommen, wann vereinbart. Keine Überraschungen, keine unentschuldigten Ausfälle.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>Ehrliche Kommunikation</h3>
+          <p>Wenn etwas nicht passt, sagen wir es – und finden gemeinsam eine Lösung.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>Transparente Preise</h3>
+          <p>Kein Kleingedrucktes. Sie wissen vorher, was es kostet und was dafür getan wird.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📍</div>
+          <h3>Regional vor Ort</h3>
+          <p>Wir kennen die Region und sind schnell erreichbar – nicht irgendwo in einer Zentrale.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⭐</div>
+          <h3>Geprüfte Qualität</h3>
+          <p>Wir arbeiten nach klaren Standards und prüfen unsere Ergebnisse regelmäßig.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="section" id="ablauf">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Unser Ablauf</p>
+        <h2>So einfach geht es</h2>
+        <p class="lead">Von der Anfrage bis zur ersten Reinigung – in wenigen Schritten.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Anfrage senden</h3>
+          <p>Kurz beschreiben, was Sie brauchen – online oder telefonisch.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Rückmeldung erhalten</h3>
+          <p>Wir melden uns schnell und klären erste Fragen.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Angebot bekommen</h3>
+          <p>Sie erhalten ein klares Angebot ohne versteckte Kosten.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Reinigung starten</h3>
+          <p>Wir starten zum vereinbarten Termin – zuverlässig und gründlich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bewertungen -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Kundenstimmen</p>
+        <h2>Was unsere Kunden sagen</h2>
+      </div>
+      <div class="grid-3">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Endlich ein Reinigungsunternehmen, das verlässlich kommt und sauber arbeitet. Klare Empfehlung."</p>
+          <p class="review-author">Markus H., Geschäftsführer</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Sehr freundlich, pünktlich und das Ergebnis war top. Besser als alles, was wir vorher hatten."</p>
+          <p class="review-author">Sandra K., Büroleiterin</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Feste Ansprechpartnerin, faire Preise – genau das, was ich gesucht habe."</p>
+          <p class="review-author">Thomas B., Privatkundin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2>Ihre Fragen – unsere Antworten</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Wie schnell bekomme ich eine Rückmeldung?</button>
+          <div class="faq-answer">In der Regel innerhalb von 24 Stunden, oft schon am selben Tag. Sie werden nicht wochenlang auf eine Antwort warten.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Ist die Anfrage kostenlos und unverbindlich?</button>
+          <div class="faq-answer">Ja, vollständig. Das Gespräch und das Angebot kosten nichts. Sie entscheiden in Ruhe, ob es passt.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">In welcher Region sind Sie tätig?</button>
+          <div class="faq-answer">Wir sind regional tätig – bitte sprechen Sie uns direkt an und wir klären, ob wir zu Ihnen kommen können.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Muss ich etwas vorbereiten?</button>
+          <div class="faq-answer">Nein. Wir besprechen alles vorab. Beim ersten Termin klären wir gemeinsam, was zu tun ist und wie der Ablauf aussieht.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Gibt es auch einmalige Reinigungen, oder nur Dauerpflege?</button>
+          <div class="faq-answer">Beides ist möglich. Ob einmalige Grundreinigung, Umzugsreinigung oder regelmäßige Büroreinigung – wir passen uns Ihrem Bedarf an.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--#include virtual="/includes/cta-final.shtml" -->
+
+  <!--#include virtual="/includes/footer.shtml" -->
+  <!--#include virtual="/includes/tracking.shtml" -->
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

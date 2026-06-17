@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/images/logo/logo-white.svg" alt="Mündlein Reinigung" width="160" height="40">
+      <p>Professionelle Reinigung für Unternehmen und Privatkunden. Zuverlässig, sauber, persönlich.</p>
+      <address>
+        <a href="tel:+4900000000000">+49 (0) 000 000 00 00</a><br>
+        <a href="mailto:info@mündlein-reinigung.de">info@mündlein-reinigung.de</a>
+      </address>
+    </div>
+
+    <div class="footer-nav">
+      <h3>Leistungen</h3>
+      <a href="/leistungen#bueroreinigung">Büroreinigung</a>
+      <a href="/leistungen#gebaeudereinigung">Gebäudereinigung</a>
+      <a href="/leistungen#grundreinigung">Grundreinigung</a>
+      <a href="/leistungen#glas">Glasreinigung</a>
+    </div>
+
+    <div class="footer-nav">
+      <h3>Unternehmen</h3>
+      <a href="/leistungen">Leistungen</a>
+      <a href="/#ablauf">Ablauf</a>
+      <a href="/blog/">Blog</a>
+      <a href="/kontakt">Kontakt</a>
+    </div>
+
+    <div class="footer-nav">
+      <h3>Rechtliches</h3>
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="current-year">2025</span> Mündlein Reinigung. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>

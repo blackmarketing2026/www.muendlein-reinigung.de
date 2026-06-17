@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!--#include virtual="/includes/head.shtml" -->
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <title>Blog – Mündlein Reinigung | Ratgeber rund um Reinigung</title>
+  <meta name="description" content="Tipps, Ratgeber und Wissenswertes rund um Büroreinigung, Gebäudereinigung und professionelle Reinigungsleistungen.">
+  <link rel="canonical" href="https://www.mündlein-reinigung.de/blog/">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <section class="blog-hero">
+    <div class="container">
+      <p class="eyebrow">Unser Ratgeber</p>
+      <h1>Blog – Wissen rund um Reinigung</h1>
+      <p>Tipps für Unternehmen und Privatkunden: Kosten, Ablauf, Qualität und mehr.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <img src="/assets/images/blog/blog-bueroreinigung-vorteile.webp" alt="Büroreinigung Vorteile für Unternehmen" loading="lazy" width="400" height="225">
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-meta">Ratgeber &bull; Büroreinigung</p>
+          <h2>Büroreinigung: 5 Vorteile für Ihr Unternehmen</h2>
+          <p>Saubere Büros steigern die Produktivität, reduzieren Krankentage und hinterlassen einen professionellen Eindruck bei Kunden.</p>
+          <a href="/blog/bueroreinigung-vorteile" class="blog-card-link">Artikel lesen →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <img src="/assets/images/blog/blog-haushaltsaufloesung-tipps.webp" alt="Haushaltsauflösung Tipps" loading="lazy" width="400" height="225">
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-meta">Ratgeber &bull; Haushaltsauflösung</p>
+          <h2>Haushaltsauflösung: Darauf sollten Sie achten</h2>
+          <p>Eine Haushaltsauflösung ist mit viel Aufwand verbunden. Wir erklären, worauf es ankommt und wie professionelle Hilfe aussieht.</p>
+          <a href="/blog/haushaltsaufloesung-tipps" class="blog-card-link">Artikel lesen →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!--#include virtual="/includes/cta-final.shtml" -->
+
+  <!--#include virtual="/includes/footer.shtml" -->
+  <!--#include virtual="/includes/tracking.shtml" -->
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!--#include virtual="/includes/head.shtml" -->
+  <title>Kontakt – Mündlein Reinigung | Jetzt anfragen</title>
+  <meta name="description" content="Nehmen Sie Kontakt auf. Kostenlose und unverbindliche Anfrage. Wir melden uns schnell und beraten Sie persönlich.">
+  <link rel="canonical" href="https://www.mündlein-reinigung.de/kontakt">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <!-- Hero -->
+  <section style="background: linear-gradient(135deg, #e8f0fa 0%, #f0f4f8 100%); padding: 4rem 0;">
+    <div class="container">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Anfrage senden – kostenlos &amp; unverbindlich</h1>
+      <p class="lead" style="margin-top: 1rem; max-width: 560px;">Beschreiben Sie kurz, was Sie brauchen. Wir melden uns schnell und besprechen alles Weitere persönlich.</p>
+    </div>
+  </section>
+
+  <!-- Kontakt-Grid -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <!-- Kontaktinfo -->
+      <div class="contact-info">
+        <h2>So erreichen Sie uns</h2>
+        <p>Wir sind gerne für Sie da – telefonisch, per E-Mail oder über das Formular.</p>
+
+        <div class="contact-detail">
+          📞 <a href="tel:+4900000000000">+49 (0) 000 000 00 00</a>
+        </div>
+        <div class="contact-detail">
+          ✉️ <a href="mailto:info@mündlein-reinigung.de">info@mündlein-reinigung.de</a>
+        </div>
+        <div class="contact-detail">
+          📍 <span>Musterstraße 1, 00000 Musterstadt</span>
+        </div>
+        <div class="contact-detail">
+          🕐 <span>Mo–Fr: 8:00 – 18:00 Uhr</span>
+        </div>
+
+        <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg-light); border-radius: 12px;">
+          <h3 style="margin-bottom: 0.75rem;">Was Sie erwartet</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="color: var(--color-text-light); font-size: 0.95rem;">✓ &nbsp;Rückmeldung innerhalb von 24 Stunden</li>
+            <li style="color: var(--color-text-light); font-size: 0.95rem;">✓ &nbsp;Persönliches Gespräch – kein Skript</li>
+            <li style="color: var(--color-text-light); font-size: 0.95rem;">✓ &nbsp;Klares Angebot ohne versteckte Kosten</li>
+            <li style="color: var(--color-text-light); font-size: 0.95rem;">✓ &nbsp;Kein Druck, keine Pflicht</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formular -->
+      <div>
+        <form action="/danke" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name">Ihr Name *</label>
+            <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telefonnummer *</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="+49 000 000 00 00" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" name="email" placeholder="max@beispiel.de">
+          </div>
+          <div class="form-group">
+            <label for="leistung">Was benötigen Sie?</label>
+            <select id="leistung" name="leistung">
+              <option value="">Bitte auswählen …</option>
+              <option value="bueroreinigung">Büroreinigung</option>
+              <option value="gebaeudereinigung">Gebäudereinigung</option>
+              <option value="grundreinigung">Grundreinigung</option>
+              <option value="glasreinigung">Glasreinigung</option>
+              <option value="haushaltsreinigung">Haushaltsreinigung</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Kurze Beschreibung *</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Wie oft?" required></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen und akzeptiere sie. *</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Anfrage senden</button>
+          <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.75rem;">* Pflichtfelder</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+  <!--#include virtual="/includes/tracking.shtml" -->
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* ============================================================
+   Mündlein Reinigung – Responsive Styles
+   Mobile First: Anpassungen ab Breakpoint aufwärts
+   ============================================================ */
+
+/* --- Tablet & kleiner Desktop (max 1024px) --- */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand { grid-column: span 2; }
+
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* --- Tablet (max 768px) --- */
+@media (max-width: 768px) {
+  /* Navigation */
+  .main-nav    { display: none; }
+  .header-cta  { display: none; }
+  .nav-toggle  { display: flex; }
+
+  .mobile-nav[hidden] { display: none; }
+  .mobile-nav:not([hidden]) { display: flex; }
+
+  /* Hero */
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media { order: -1; }
+
+  .hero-media img { height: 260px; }
+
+  /* Grids */
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+
+  /* Problem */
+  .problem-list { grid-template-columns: 1fr; }
+
+  /* Ablauf */
+  .steps { grid-template-columns: 1fr; gap: 1.25rem; }
+
+  /* Kontakt */
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: span 1; }
+
+  /* Trust bar */
+  .trust-bar-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Sections */
+  .section { padding: 3rem 0; }
+
+  /* CTA */
+  .cta-group { flex-direction: column; align-items: center; }
+  .cta-group .btn { width: 100%; max-width: 340px; }
+}
+
+/* --- Mobil (max 480px) --- */
+@media (max-width: 480px) {
+  :root { --spacing-xl: 3rem; }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+
+  .hero { padding: 2rem 0; }
+  .hero-media img { height: 220px; }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn { width: 100%; text-align: center; }
+
+  .hero-trust { flex-direction: column; gap: 0.5rem; }
+
+  .card { padding: 1.25rem; }
+
+  .btn-lg { padding: 0.875rem 1.5rem; font-size: 1rem; }
+
+  .site-header .header-inner { height: 64px; }
+  .logo img { height: 36px; }
+
+  .legal-content { padding: 2rem 0; }
+}
