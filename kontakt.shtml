@@ -99,6 +99,10 @@
             <input type="email" id="email" name="E-Mail" placeholder="max@beispiel.de" required>
           </div>
           <div class="form-group">
+            <label for="telefon">Telefon <span class="optional">(optional)</span></label>
+            <input type="tel" id="telefon" name="Telefon" placeholder="+49 212 000 00 00">
+          </div>
+          <div class="form-group">
             <label for="leistung">Was benötigen Sie?</label>
             <select id="leistung" name="Leistung">
               <option value="">Bitte auswählen …</option>

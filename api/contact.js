@@ -13,6 +13,7 @@ module.exports = async function handler(req, res) {
   const ort = body.Ort || '';
   const leistung = body.Leistung || '';
   const reinigungsart = body.Reinigungsart || '';
+  const telefon = body.Telefon || '';
   const nachricht = body.Nachricht || '';
 
   if (Resend && process.env.RESEND_API_KEY && process.env.RESEND_FROM_EMAIL && name && email && nachricht) {
@@ -21,6 +22,7 @@ module.exports = async function handler(req, res) {
 
       const safeName = esc(name);
       const safeEmail = esc(email);
+      const safeTelefon = telefon ? esc(telefon) : '';
       const safeUnternehmen = unternehmen ? esc(unternehmen) : '';
       const safeOrt = ort ? esc(ort) : '';
       const safeLeistung = leistung ? esc(leistung) : '';
@@ -31,6 +33,7 @@ module.exports = async function handler(req, res) {
         { label: 'Name', value: safeName },
         safeUnternehmen && { label: 'Unternehmen', value: safeUnternehmen },
         { label: 'E-Mail', value: '<a href="mailto:' + safeEmail + '" style="color:#2D9CDB;text-decoration:none">' + safeEmail + '</a>' },
+        safeTelefon && { label: 'Telefon', value: '<a href="tel:' + safeTelefon.replace(/\s/g, '') + '" style="color:#2D9CDB;text-decoration:none">' + safeTelefon + '</a>' },
         safeOrt && { label: 'Ort', value: safeOrt },
         safeLeistung && { label: 'Leistung', value: safeLeistung },
         safeArt && { label: 'Reinigungsart', value: safeArt },
@@ -67,12 +70,13 @@ module.exports = async function handler(req, res) {
         '</td></tr>' +
         '<tr><td style="padding:24px 40px 0">' +
         '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>' +
-        '<td style="padding-right:8px" width="50%">' +
-        '<a href="mailto:' + safeEmail + '?subject=' + replySubject + '&body=' + replyBody + '" style="display:block;text-align:center;background:#2D9CDB;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:8px">&#9993;&ensp;E-Mail senden</a>' +
-        '</td>' +
-        '<td style="padding-left:8px" width="50%">' +
-        '<a href="mailto:' + safeEmail + '" style="display:block;text-align:center;background:#0F2F4A;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:8px">&#8618;&ensp;Direkt antworten</a>' +
-        '</td>' +
+        (safeTelefon
+          ? '<td style="padding-right:6px" width="33%"><a href="tel:' + safeTelefon.replace(/\s/g, '') + '" style="display:block;text-align:center;background:#22c55e;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 12px;border-radius:8px">&#9742;&ensp;Anrufen</a></td>' +
+            '<td style="padding:0 3px" width="34%"><a href="mailto:' + safeEmail + '?subject=' + replySubject + '&body=' + replyBody + '" style="display:block;text-align:center;background:#2D9CDB;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 12px;border-radius:8px">&#9993;&ensp;E-Mail senden</a></td>' +
+            '<td style="padding-left:6px" width="33%"><a href="mailto:' + safeEmail + '" style="display:block;text-align:center;background:#0F2F4A;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 12px;border-radius:8px">&#8618;&ensp;Antworten</a></td>'
+          : '<td style="padding-right:8px" width="50%"><a href="mailto:' + safeEmail + '?subject=' + replySubject + '&body=' + replyBody + '" style="display:block;text-align:center;background:#2D9CDB;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:8px">&#9993;&ensp;E-Mail senden</a></td>' +
+            '<td style="padding-left:8px" width="50%"><a href="mailto:' + safeEmail + '" style="display:block;text-align:center;background:#0F2F4A;color:#ffffff;font-size:14px;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:8px">&#8618;&ensp;Direkt antworten</a></td>'
+        ) +
         '</tr></table></td></tr>' +
         '<tr><td style="padding:28px 40px 0">' +
         '<p style="margin:0 0 12px;color:#6b7280;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:600">Kontaktdaten</p>' +
