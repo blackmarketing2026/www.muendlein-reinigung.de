@@ -51,13 +51,7 @@
 
       <!-- Formular -->
       <div>
-        <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST">
-          <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.shtml">
-          <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
-          <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="box">
-          <input type="text" name="_honey" style="display:none">
+        <form action="/api/contact" method="POST">
           <div class="form-group">
             <label for="name">Ihr Name *</label>
             <input type="text" id="name" name="Name" placeholder="Max Mustermann" required>
