@@ -15,16 +15,5 @@
     });
   });
 
-  /* --- Telefon-Klick-Tracking --- */
-  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'phone_click', {
-          event_category: 'contact',
-          event_label: link.getAttribute('href')
-        });
-      }
-    });
-  });
 
 })();

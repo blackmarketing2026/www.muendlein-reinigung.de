@@ -3,5 +3,11 @@
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": false,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "functions": {
+    "api/contact.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }

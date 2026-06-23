@@ -30,7 +30,6 @@
 
         <div class="hero-actions">
           <a href="#kontakt" class="btn btn-accent btn-lg">Jetzt Reinigungsanfrage senden</a>
-          <a href="tel:+49000000000" class="btn btn-outline btn-lg">Direkt anrufen</a>
         </div>
 
         <p class="hero-trust-line">Unverbindlich anfragen &nbsp;·&nbsp; Persönlicher Ansprechpartner &nbsp;·&nbsp; Regional vor Ort</p>
@@ -400,7 +399,6 @@
       <p>Beschreiben Sie kurz Ihren Reinigungsbedarf. Wir melden uns persönlich zurück und klären die nächsten Schritte.</p>
       <div class="cta-group">
         <a href="#kontakt" class="btn btn-accent btn-lg">Jetzt Anfrage senden</a>
-        <a href="tel:+49000000000" class="btn btn-outline-white btn-lg">Direkt anrufen</a>
       </div>
     </div>
   </section>
@@ -417,8 +415,7 @@
           <h2>Reinigungsanfrage senden</h2>
           <p>Je genauer Ihre Angaben sind, desto besser kann der Reinigungsbedarf eingeschätzt werden.</p>
 
-          <div class="contact-detail"><span>📞</span> <a href="tel:+49000000000">[Telefon einfügen]</a></div>
-          <div class="contact-detail"><span>✉️</span> <a href="mailto:info@muendlein-reinigung.de">[E-Mail einfügen]</a></div>
+          <div class="contact-detail"><span>✉️</span> <a href="mailto:info@muendlein-reinigung.de">info@muendlein-reinigung.de</a></div>
           <div class="contact-detail"><span>📍</span> <span>Solingen und Umgebung</span></div>
           <div class="contact-detail"><span>🕐</span> <span>Mo–Fr: 8:00 – 18:00 Uhr</span></div>
 
@@ -434,7 +431,7 @@
         </div>
 
         <div class="contact-section-form">
-          <form action="/danke" method="POST" class="contact-form" novalidate>
+          <form action="/api/contact" method="POST" class="contact-form" novalidate>
 
             <div class="form-row">
               <div class="form-group">
@@ -447,15 +444,9 @@
               </div>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="telefon">Telefon <abbr title="Pflichtfeld">*</abbr></label>
-                <input type="tel" id="telefon" name="telefon" placeholder="+49 212 000 00 00" required autocomplete="tel">
-              </div>
-              <div class="form-group">
-                <label for="email">E-Mail <span class="optional">(optional)</span></label>
-                <input type="email" id="email" name="email" placeholder="max@beispiel.de" autocomplete="email">
-              </div>
+            <div class="form-group">
+              <label for="email">E-Mail <abbr title="Pflichtfeld">*</abbr></label>
+              <input type="email" id="email" name="email" placeholder="max@beispiel.de" required autocomplete="email">
             </div>
 
             <div class="form-group">

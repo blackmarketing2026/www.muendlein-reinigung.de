@@ -26,13 +26,10 @@
       <!-- Kontaktinfo -->
       <div class="contact-info">
         <h2>So erreichen Sie uns</h2>
-        <p>Wir sind gerne für Sie da – telefonisch, per E-Mail oder über das Formular.</p>
+        <p>Wir sind gerne für Sie da – per E-Mail oder über das Formular.</p>
 
         <div class="contact-detail">
-          📞 <a href="tel:+4900000000000">+49 (0) 000 000 00 00</a>
-        </div>
-        <div class="contact-detail">
-          ✉️ <a href="mailto:info@mündlein-reinigung.de">info@mündlein-reinigung.de</a>
+          ✉️ <a href="mailto:info@muendlein-reinigung.de">info@muendlein-reinigung.de</a>
         </div>
         <div class="contact-detail">
           📍 <span>Musterstraße 1, 00000 Musterstadt</span>
@@ -54,18 +51,14 @@
 
       <!-- Formular -->
       <div>
-        <form action="/danke" method="POST" novalidate>
+        <form action="/api/contact" method="POST" novalidate>
           <div class="form-group">
             <label for="name">Ihr Name *</label>
             <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
           </div>
           <div class="form-group">
-            <label for="telefon">Telefonnummer *</label>
-            <input type="tel" id="telefon" name="telefon" placeholder="+49 000 000 00 00" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-Mail-Adresse</label>
-            <input type="email" id="email" name="email" placeholder="max@beispiel.de">
+            <label for="email">E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" placeholder="max@beispiel.de" required>
           </div>
           <div class="form-group">
             <label for="leistung">Was benötigen Sie?</label>

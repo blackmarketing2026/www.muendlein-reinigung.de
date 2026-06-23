@@ -9,6 +9,9 @@ desktop.ini
 *.swp
 *.swo
 
+# Dependencies
+node_modules/
+
 # Rohdaten / nicht für FTP
 raw-images/
 backup/
