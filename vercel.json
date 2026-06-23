@@ -3,8 +3,26 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "framework": null,
-  "cleanUrls": true,
   "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)\\.shtml",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index.shtml" },
+    { "source": "/kontakt", "destination": "/kontakt.shtml" },
+    { "source": "/danke", "destination": "/danke.shtml" },
+    { "source": "/leistungen", "destination": "/leistungen.shtml" },
+    { "source": "/impressum", "destination": "/impressum.shtml" },
+    { "source": "/datenschutz", "destination": "/datenschutz.shtml" },
+    { "source": "/blog", "destination": "/blog/index.shtml" },
+    { "source": "/blog/bueroreinigung-vorteile", "destination": "/blog/bueroreinigung-vorteile.shtml" },
+    { "source": "/blog/haushaltsaufloesung-tipps", "destination": "/blog/haushaltsaufloesung-tipps.shtml" }
+  ],
   "functions": {
     "api/contact.js": {
       "memory": 128,
