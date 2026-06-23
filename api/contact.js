@@ -7,7 +7,8 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, unternehmen, email, ort, leistung, art, nachricht } = req.body;
+  const body = req.body || {};
+  const { name, unternehmen, email, ort, leistung, art, nachricht } = body;
 
   if (!name || !email || !nachricht) {
     return res.status(400).json({ error: 'Bitte füllen Sie alle Pflichtfelder aus.' });
@@ -136,7 +137,7 @@ module.exports = async function handler(req, res) {
   `.trim();
 
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL,
       to: ['muendlein@function-concept.de', 'Info@cleanteam-group.com'],
       replyTo: email,
@@ -144,10 +145,11 @@ module.exports = async function handler(req, res) {
       html,
     });
 
-    return res.redirect(303, '/danke');
+    console.log('Resend success:', result);
+    return res.status(200).json({ success: true });
   } catch (err) {
     console.error('Resend error:', err);
-    return res.status(500).json({ error: 'E-Mail konnte nicht gesendet werden.' });
+    return res.status(500).json({ error: 'E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.' });
   }
 };
 

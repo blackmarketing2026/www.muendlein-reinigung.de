@@ -36,6 +36,44 @@
     });
   });
 
+  /* --- Kontaktformular per fetch absenden --- */
+  document.querySelectorAll('form[action="/api/contact"]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var btn = form.querySelector('button[type="submit"]');
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet …';
+
+      var data = {};
+      new FormData(form).forEach(function (val, key) {
+        data[key] = val;
+      });
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (res) { return res.json().then(function (j) { return { ok: res.ok, body: j }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            window.location.href = '/danke';
+          } else {
+            alert(res.body.error || 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+            btn.disabled = false;
+            btn.textContent = originalText;
+          }
+        })
+        .catch(function () {
+          alert('Verbindungsfehler. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
+          btn.disabled = false;
+          btn.textContent = originalText;
+        });
+    });
+  });
+
   /* --- Aktive Navigation hervorheben --- */
   var path = window.location.pathname;
   document.querySelectorAll('.main-nav a, .mobile-nav a').forEach(function (link) {
