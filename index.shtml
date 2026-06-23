@@ -432,7 +432,7 @@
 
         <div class="contact-section-form">
           <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST" class="contact-form">
-            <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.html">
+            <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.shtml">
             <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
             <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
             <input type="hidden" name="_captcha" value="false">

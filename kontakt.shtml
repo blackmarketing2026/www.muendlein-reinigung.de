@@ -4,7 +4,7 @@
   <!--#include virtual="/includes/head.shtml" -->
   <title>Kontakt – Mündlein Reinigung | Jetzt anfragen</title>
   <meta name="description" content="Nehmen Sie Kontakt auf. Kostenlose und unverbindliche Anfrage. Wir melden uns schnell und beraten Sie persönlich.">
-  <link rel="canonical" href="https://www.mündlein-reinigung.de/kontakt">
+  <link rel="canonical" href="https://muendlein-reinigung.de/kontakt">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
       <!-- Formular -->
       <div>
         <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST">
-          <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.html">
+          <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.shtml">
           <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
           <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
           <input type="hidden" name="_captcha" value="false">
