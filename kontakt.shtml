@@ -51,30 +51,36 @@
 
       <!-- Formular -->
       <div>
-        <form action="/danke" method="GET" data-api="/api/contact" novalidate>
+        <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST">
+          <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.html">
+          <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
+          <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-group">
             <label for="name">Ihr Name *</label>
-            <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+            <input type="text" id="name" name="Name" placeholder="Max Mustermann" required>
           </div>
           <div class="form-group">
             <label for="email">E-Mail-Adresse *</label>
-            <input type="email" id="email" name="email" placeholder="max@beispiel.de" required>
+            <input type="email" id="email" name="E-Mail" placeholder="max@beispiel.de" required>
           </div>
           <div class="form-group">
             <label for="leistung">Was benötigen Sie?</label>
-            <select id="leistung" name="leistung">
+            <select id="leistung" name="Leistung">
               <option value="">Bitte auswählen …</option>
-              <option value="bueroreinigung">Büroreinigung</option>
-              <option value="gebaeudereinigung">Gebäudereinigung</option>
-              <option value="grundreinigung">Grundreinigung</option>
-              <option value="glasreinigung">Glasreinigung</option>
-              <option value="haushaltsreinigung">Haushaltsreinigung</option>
-              <option value="sonstiges">Sonstiges</option>
+              <option>Büroreinigung</option>
+              <option>Gebäudereinigung</option>
+              <option>Grundreinigung</option>
+              <option>Glasreinigung</option>
+              <option>Haushaltsreinigung</option>
+              <option>Sonstiges</option>
             </select>
           </div>
           <div class="form-group">
             <label for="nachricht">Kurze Beschreibung *</label>
-            <textarea id="nachricht" name="nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Wie oft?" required></textarea>
+            <textarea id="nachricht" name="Nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Wie oft?" required></textarea>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" id="datenschutz" name="datenschutz" required>

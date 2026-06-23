@@ -431,57 +431,63 @@
         </div>
 
         <div class="contact-section-form">
-          <form action="/danke" method="GET" data-api="/api/contact" class="contact-form" novalidate>
+          <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST" class="contact-form">
+            <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.html">
+            <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
+            <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="text" name="_honey" style="display:none">
 
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Ihr Name <abbr title="Pflichtfeld">*</abbr></label>
-                <input type="text" id="name" name="name" placeholder="Max Mustermann" required autocomplete="name">
+                <input type="text" id="name" name="Name" placeholder="Max Mustermann" required autocomplete="name">
               </div>
               <div class="form-group">
                 <label for="unternehmen">Unternehmen <span class="optional">(optional)</span></label>
-                <input type="text" id="unternehmen" name="unternehmen" placeholder="Firma GmbH" autocomplete="organization">
+                <input type="text" id="unternehmen" name="Unternehmen" placeholder="Firma GmbH" autocomplete="organization">
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">E-Mail <abbr title="Pflichtfeld">*</abbr></label>
-              <input type="email" id="email" name="email" placeholder="max@beispiel.de" required autocomplete="email">
+              <input type="email" id="email" name="E-Mail" placeholder="max@beispiel.de" required autocomplete="email">
             </div>
 
             <div class="form-group">
               <label for="ort">Ort / Einsatzort <abbr title="Pflichtfeld">*</abbr></label>
-              <input type="text" id="ort" name="ort" placeholder="z. B. Solingen-Mitte, Ohligs, Gräfrath …" required>
+              <input type="text" id="ort" name="Ort" placeholder="z. B. Solingen-Mitte, Ohligs, Gräfrath …" required>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="leistung">Ich suche Reinigung für:</label>
-                <select id="leistung" name="leistung">
+                <select id="leistung" name="Leistung">
                   <option value="">Bitte auswählen …</option>
-                  <option value="arztpraxis">Arztpraxis</option>
-                  <option value="buero">Büro</option>
-                  <option value="industrie">Industrieanlage</option>
-                  <option value="fitness">Fitnessstudio</option>
-                  <option value="haushalt">Privathaushalt</option>
-                  <option value="treppenhaus">Treppenhaus / Gemeinschaftsfläche</option>
-                  <option value="sonstiges">Sonstiges</option>
+                  <option>Arztpraxis</option>
+                  <option>Büro</option>
+                  <option>Industrieanlage</option>
+                  <option>Fitnessstudio</option>
+                  <option>Privathaushalt</option>
+                  <option>Treppenhaus / Gemeinschaftsfläche</option>
+                  <option>Sonstiges</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="art">Gewünschte Reinigungsart:</label>
-                <select id="art" name="art">
+                <select id="art" name="Reinigungsart">
                   <option value="">Bitte auswählen …</option>
-                  <option value="regelmaessig">Regelmäßig</option>
-                  <option value="einmalig">Einmalig</option>
-                  <option value="unklar">Noch unklar</option>
+                  <option>Regelmäßig</option>
+                  <option>Einmalig</option>
+                  <option>Noch unklar</option>
                 </select>
               </div>
             </div>
 
             <div class="form-group">
               <label for="nachricht">Kurze Beschreibung <abbr title="Pflichtfeld">*</abbr></label>
-              <textarea id="nachricht" name="nachricht"
+              <textarea id="nachricht" name="Nachricht"
                 placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Gibt es besondere Anforderungen?"
                 required></textarea>
             </div>

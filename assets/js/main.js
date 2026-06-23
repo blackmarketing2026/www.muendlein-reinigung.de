@@ -36,37 +36,6 @@
     });
   });
 
-  /* --- Kontaktformular absenden --- */
-  document.querySelectorAll('form[data-api="/api/contact"]').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Wird gesendet …';
-
-      var data = {};
-      new FormData(form).forEach(function (val, key) {
-        data[key] = val;
-      });
-
-      var payload = JSON.stringify(data);
-
-      try {
-        navigator.sendBeacon('/api/contact', new Blob([payload], { type: 'application/json' }));
-      } catch (_) {
-        fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: payload,
-          keepalive: true
-        }).catch(function () {});
-      }
-
-      window.location.href = '/danke';
-    });
-  });
-
   /* --- Aktive Navigation hervorheben --- */
   var path = window.location.pathname;
   document.querySelectorAll('.main-nav a, .mobile-nav a').forEach(function (link) {

@@ -541,17 +541,23 @@ p{max-width:65ch}
         </div>
       </div>
       <div class="contact-section-form">
-        <form action="/danke" method="GET" data-api="/api/contact" novalidate>
+        <form action="https://formsubmit.co/muendlein@function-concept.de" method="POST">
+          <input type="hidden" name="_next" value="https://muendlein-reinigung.de/danke.html">
+          <input type="hidden" name="_subject" value="Neue Reinigungsanfrage über die Website">
+          <input type="hidden" name="_cc" value="Info@cleanteam-group.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-row">
-            <div class="form-group"><label for="p-name">Ihr Name *</label><input type="text" id="p-name" name="name" placeholder="Max Mustermann" required></div>
-            <div class="form-group"><label for="p-firma">Unternehmen <span class="optional">(optional)</span></label><input type="text" id="p-firma" name="unternehmen" placeholder="Firma GmbH"></div>
+            <div class="form-group"><label for="p-name">Ihr Name *</label><input type="text" id="p-name" name="Name" placeholder="Max Mustermann" required></div>
+            <div class="form-group"><label for="p-firma">Unternehmen <span class="optional">(optional)</span></label><input type="text" id="p-firma" name="Unternehmen" placeholder="Firma GmbH"></div>
           </div>
-          <div class="form-group"><label for="p-mail">E-Mail *</label><input type="email" id="p-mail" name="email" placeholder="max@beispiel.de" required></div>
-          <div class="form-group"><label for="p-ort">Ort / Einsatzort *</label><input type="text" id="p-ort" name="ort" placeholder="z. B. Solingen-Mitte, Ohligs …" required></div>
+          <div class="form-group"><label for="p-mail">E-Mail *</label><input type="email" id="p-mail" name="E-Mail" placeholder="max@beispiel.de" required></div>
+          <div class="form-group"><label for="p-ort">Ort / Einsatzort *</label><input type="text" id="p-ort" name="Ort" placeholder="z. B. Solingen-Mitte, Ohligs …" required></div>
           <div class="form-row">
             <div class="form-group">
               <label for="p-leistung">Ich suche Reinigung für:</label>
-              <select id="p-leistung" name="leistung">
+              <select id="p-leistung" name="Leistung">
                 <option value="">Bitte auswählen …</option>
                 <option>Arztpraxis</option><option>Büro</option>
                 <option>Industrieanlage</option><option>Fitnessstudio</option>
@@ -560,16 +566,16 @@ p{max-width:65ch}
             </div>
             <div class="form-group">
               <label for="p-art">Reinigungsart:</label>
-              <select id="p-art" name="art">
+              <select id="p-art" name="Reinigungsart">
                 <option value="">Bitte auswählen …</option>
                 <option>Regelmäßig</option><option>Einmalig</option><option>Noch unklar</option>
               </select>
             </div>
           </div>
-          <div class="form-group"><label for="p-msg">Kurze Beschreibung *</label><textarea id="p-msg" name="nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Besondere Anforderungen?" required></textarea></div>
+          <div class="form-group"><label for="p-msg">Kurze Beschreibung *</label><textarea id="p-msg" name="Nachricht" placeholder="Was soll gereinigt werden? Wie groß ist die Fläche? Besondere Anforderungen?" required></textarea></div>
           <div class="form-checkbox">
             <input type="checkbox" id="p-dsgvo" name="datenschutz" required>
-            <label for="p-dsgvo">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zu. *</label>
+            <label for="p-dsgvo">Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zu. *</label>
           </div>
           <button type="submit" class="btn btn-accent btn-lg" style="width:100%">Anfrage senden – wir melden uns mit den nächsten Schritten</button>
           <p class="form-microcopy">Ihre Anfrage ist unverbindlich. Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
