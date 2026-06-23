@@ -96,7 +96,7 @@ module.exports = async function handler(req, res) {
         from: process.env.RESEND_FROM_EMAIL,
         to: ['muendlein@function-concept.de', 'Info@cleanteam-group.com'],
         replyTo: email,
-        subject: 'Neue Reinigungsanfrage von ' + name,
+        subject: 'Lead - Mündlein - ' + (leistung || 'Allgemeine Anfrage') + ' - ' + name,
         html: html,
       });
 
