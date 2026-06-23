@@ -36,13 +36,12 @@
     });
   });
 
-  /* --- Kontaktformular per fetch absenden --- */
-  document.querySelectorAll('form[action="/api/contact"]').forEach(function (form) {
+  /* --- Kontaktformular absenden --- */
+  document.querySelectorAll('form[data-api="/api/contact"]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       var btn = form.querySelector('button[type="submit"]');
-      var originalText = btn.textContent;
       btn.disabled = true;
       btn.textContent = 'Wird gesendet …';
 
@@ -51,26 +50,20 @@
         data[key] = val;
       });
 
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-        .then(function (res) { return res.json().then(function (j) { return { ok: res.ok, body: j }; }); })
-        .then(function (res) {
-          if (res.ok) {
-            window.location.href = '/danke';
-          } else {
-            alert(res.body.error || 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
-            btn.disabled = false;
-            btn.textContent = originalText;
-          }
-        })
-        .catch(function () {
-          alert('Verbindungsfehler. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
-          btn.disabled = false;
-          btn.textContent = originalText;
-        });
+      var payload = JSON.stringify(data);
+
+      try {
+        navigator.sendBeacon('/api/contact', new Blob([payload], { type: 'application/json' }));
+      } catch (_) {
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: payload,
+          keepalive: true
+        }).catch(function () {});
+      }
+
+      window.location.href = '/danke';
     });
   });
 
