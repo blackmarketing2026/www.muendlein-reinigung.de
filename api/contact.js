@@ -11,7 +11,7 @@ module.exports = async function handler(req, res) {
   const { Name, Unternehmen, 'E-Mail': email, Ort, Leistung, Reinigungsart, Nachricht } = body;
 
   if (!Name || !email || !Nachricht) {
-    return res.redirect(303, '/danke.shtml');
+    return res.redirect(303, '/danke');
   }
 
   const safeName = esc(Name);
@@ -108,7 +108,7 @@ safeNachricht +
     console.error('Resend error:', err);
   }
 
-  return res.redirect(303, '/danke.shtml');
+  return res.redirect(303, '/danke');
 };
 
 function esc(str) {
