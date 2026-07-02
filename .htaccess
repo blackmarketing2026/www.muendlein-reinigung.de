@@ -6,6 +6,12 @@ RewriteEngine On
 
 DirectoryIndex index.shtml index.html
 
+# Impressum extern weiterleiten
+RewriteRule ^impressum(\.shtml)?/?$ https://cleanteam-solingen.de/impressum/ [R=302,L]
+
+# Datenschutz extern weiterleiten
+RewriteRule ^datenschutz(\.shtml)?/?$ https://cleanteam-solingen.de/datenschutz/ [R=302,L]
+
 # Trailing-Slash entfernen (ausser Root)
 RewriteCond %{REQUEST_URI} ^/(.+)/$
 RewriteCond %{REQUEST_FILENAME} !-d

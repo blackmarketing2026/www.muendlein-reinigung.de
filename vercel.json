@@ -12,13 +12,17 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/impressum", "destination": "https://cleanteam-solingen.de/impressum/", "permanent": false },
+    { "source": "/impressum.shtml", "destination": "https://cleanteam-solingen.de/impressum/", "permanent": false },
+    { "source": "/datenschutz", "destination": "https://cleanteam-solingen.de/datenschutz/", "permanent": false },
+    { "source": "/datenschutz.shtml", "destination": "https://cleanteam-solingen.de/datenschutz/", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.shtml" },
     { "source": "/kontakt", "destination": "/kontakt.shtml" },
     { "source": "/danke", "destination": "/danke.shtml" },
     { "source": "/leistungen", "destination": "/leistungen.shtml" },
-    { "source": "/impressum", "destination": "/impressum.shtml" },
-    { "source": "/datenschutz", "destination": "/datenschutz.shtml" },
     { "source": "/blog", "destination": "/blog/index.shtml" },
     { "source": "/blog/bueroreinigung-vorteile", "destination": "/blog/bueroreinigung-vorteile.shtml" },
     { "source": "/blog/haushaltsaufloesung-tipps", "destination": "/blog/haushaltsaufloesung-tipps.shtml" }
