@@ -63,6 +63,7 @@
 
   /* Trust Features */
   .trust-features { grid-template-columns: 1fr; }
+  .cert-badge { flex-direction: column; text-align: center; }
 
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; }
