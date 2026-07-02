@@ -1,7 +1,20 @@
 /* ============================================================
    Thomas Mündlein Reinigung – Responsive Styles
-   Mobile First: Breakpoints 1024 / 768 / 480 px
+   Mobile First: Breakpoints 1180 / 1024 / 768 / 480 px
    ============================================================ */
+
+/* --- Navigation (max 1180px) ---
+   Logo + Nav + CTA brauchen zusammen ~1112px; darunter auf
+   Burger-Menü umschalten statt Header überlaufen/umbrechen zu lassen. */
+@media (max-width: 1180px) {
+  .logo { flex-shrink: 1; min-width: 0; }
+
+  .main-nav   { display: none; }
+  .header-cta { display: none; }
+  .nav-toggle { display: flex; }
+  .mobile-nav[hidden]       { display: none; }
+  .mobile-nav:not([hidden]) { display: flex; }
+}
 
 /* --- Tablet / kleiner Desktop (max 1024px) --- */
 @media (max-width: 1024px) {
@@ -26,13 +39,6 @@
     --spacing-xl: 3.5rem;
     --spacing-xxl: 5rem;
   }
-
-  /* Navigation */
-  .main-nav   { display: none; }
-  .header-cta { display: none; }
-  .nav-toggle { display: flex; }
-  .mobile-nav[hidden]       { display: none; }
-  .mobile-nav:not([hidden]) { display: flex; }
 
   /* Hero */
   .hero-inner { grid-template-columns: 1fr; }
@@ -72,6 +78,9 @@
 
   /* Form */
   .form-row { grid-template-columns: 1fr; }
+
+  /* Buttons: bei wenig Platz umbrechen statt Layout zu sprengen */
+  .btn { white-space: normal; text-align: center; }
 
   /* CTA */
   .cta-group { flex-direction: column; align-items: center; }

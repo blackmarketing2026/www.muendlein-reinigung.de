@@ -212,16 +212,17 @@ p  { max-width: 65ch; }
 .header-inner {
   display: flex;
   align-items: center;
-  height: 68px;
+  min-height: 68px;
+  padding: 0.5rem 0;
   gap: 2rem;
 }
 
 .logo {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 0.6rem;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .logo-mark {
@@ -236,6 +237,7 @@ p  { max-width: 65ch; }
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.2;
+  min-width: 0;
 }
 
 .logo-sub {
@@ -318,6 +320,8 @@ p  { max-width: 65ch; }
   align-items: center;
   gap: var(--spacing-lg);
 }
+
+.hero-content, .hero-visual { min-width: 0; }
 
 .hero-content { max-width: 580px; }
 .hero-content h1 { margin-bottom: 1rem; color: var(--color-primary); }
@@ -413,6 +417,7 @@ p  { max-width: 65ch; }
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  min-width: 0;
   box-shadow: var(--shadow-sm);
 }
 
@@ -540,6 +545,7 @@ p  { max-width: 65ch; }
 
 .zielgruppe-panel {
   padding: 3rem 2.5rem;
+  min-width: 0;
 }
 
 .zielgruppe-panel--dark {
@@ -760,6 +766,9 @@ p  { max-width: 65ch; }
   align-items: start;
 }
 
+.contact-section-info,
+.contact-section-form { min-width: 0; }
+
 .contact-section-info h2 { margin-bottom: 0.75rem; }
 .contact-section-info p  { color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 1.5rem; }
 
@@ -955,13 +964,14 @@ p  { max-width: 65ch; }
   padding-bottom: var(--spacing-lg);
 }
 
-.footer-brand .logo-text { color: var(--color-white); font-size: 1.05rem; }
+.footer-brand .logo-text { display: block; color: var(--color-white); font-size: 1.05rem; }
 .footer-brand .logo-sub  { color: rgba(255,255,255,.5); }
 
 .footer-logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
   max-width: 210px;
   margin-bottom: 1rem;
   padding: 0.45rem 0.65rem;

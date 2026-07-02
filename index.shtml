@@ -21,10 +21,7 @@
   <div class="container header-inner">
     <a href="/" class="logo" aria-label="Thomas Mündlein Reinigung – Startseite">
       <img src="/media/Logo/logo.png" alt="" class="logo-mark" width="1280" height="896">
-      <span class="logo-text">
-        Thomas Mündlein Reinigung
-        <span class="logo-sub">Medizinische, klinische & Gastro-Reinigung aus Solingen</span>
-      </span>
+      <span class="logo-text">Thomas Mündlein Reinigung</span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
       <a href="/#leistungen">Leistungen</a>
