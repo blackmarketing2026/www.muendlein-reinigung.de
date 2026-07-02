@@ -360,6 +360,19 @@ p  { max-width: 65ch; }
 
 .hero-trust-line::before { content: none; }
 
+/* Team-Foto */
+.team-photo {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.team-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Hero Visual */
 .hero-visual { display: flex; flex-direction: column; gap: 1rem; }
 

@@ -319,6 +319,25 @@
   </section>
 
   <!-- ===================================================
+       7B. UNSER TEAM
+       =================================================== -->
+  <section class="section section-light" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Unser Team</span>
+        <h2>Die Menschen hinter Ihrer Reinigung</h2>
+        <p class="lead">Kein anonymes Reinigungsunternehmen, sondern ein festes Team mit Erfahrung in medizinischen, klinischen und Gastro-Hygienebereichen. Sie sprechen mit echten Ansprechpartnern – nicht mit wechselndem Personal.</p>
+      </div>
+
+      <div class="team-photo">
+        <img src="/assets/images/team/muendlein-team.webp"
+             alt="Das Team von Thomas Mündlein Reinigung"
+             width="1400" height="933" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
        8. ABLAUF
        =================================================== -->
   <section class="section" id="ablauf">
@@ -657,6 +676,7 @@
       <h3>Unternehmen</h3>
       <a href="/#zielgruppen">Für medizinische Einrichtungen</a>
       <a href="/#zielgruppen">Für Gastronomie</a>
+      <a href="/#team">Unser Team</a>
       <a href="/#ablauf">Ablauf</a>
       <a href="/#kontakt">Anfrage senden</a>
     </div>
