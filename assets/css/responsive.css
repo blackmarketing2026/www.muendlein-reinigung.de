@@ -62,7 +62,7 @@
   .branchen-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Trust Features */
-  .trust-features { grid-template-columns: 1fr; }
+  .trust-feature { flex-basis: 100%; }
   .cert-badge { flex-direction: column; text-align: center; }
 
   /* Footer */
@@ -115,5 +115,5 @@
   .mechanism-steps { gap: 0.5rem; }
   .step-arrow { font-size: 1.2rem; }
 
-  .trust-features { grid-template-columns: 1fr; gap: 0.75rem; }
+  .trust-features { gap: 0.75rem; }
 }

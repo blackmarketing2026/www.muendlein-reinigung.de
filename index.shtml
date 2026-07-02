@@ -446,13 +446,14 @@
         <div class="trust-feature"><span class="trust-feature-icon">🍽️</span><span>HACCP-relevante Gastro-Hygiene</span></div>
         <div class="trust-feature"><span class="trust-feature-icon">🤐</span><span>Diskretion bei sensiblen Einsätzen</span></div>
         <div class="trust-feature"><span class="trust-feature-icon">📍</span><span>Regionale Nähe in Solingen</span></div>
+        <div class="trust-feature"><span class="trust-feature-icon">🧴</span><span>Geprüfte Reinigungsmittel mit Datenblättern</span></div>
       </div>
 
       <div class="cert-badge">
         <img src="/assets/images/referenzen/zertifikat-iso-9001.webp" alt="ISO 9001:2015 Zertifikat, ausgestellt durch TÜV Rheinland Cert GmbH" width="320" height="452" loading="lazy">
         <div class="cert-badge-text">
           <h3>ISO 9001:2015 zertifiziert</h3>
-          <p>Geprüft und zertifiziert durch TÜV Rheinland Cert GmbH. Das Zertifikat bestätigt dokumentierte Qualitätsprozesse für Reinigungsleistungen in sensiblen Bereichen – von der Praxis bis zur Gastroküche.</p>
+          <p>Geprüft und zertifiziert durch TÜV Rheinland Cert GmbH. Das Zertifikat bestätigt dokumentierte Qualitätsprozesse für Reinigungsleistungen in sensiblen Bereichen – von der Praxis bis zur Gastroküche. Eingesetzt werden ausschließlich geprüfte und für den jeweiligen Bereich zugelassene Reinigungs- und Desinfektionsmittel, deren Datenblätter auf Anfrage zur Verfügung gestellt werden.</p>
         </div>
       </div>
     </div>
@@ -604,6 +605,10 @@
         <div class="faq-item">
           <button class="faq-question">Was genau bedeutet Tatortreinigung bei Ihnen?</button>
           <div class="faq-answer">Wir übernehmen die fachgerechte und diskrete Reinigung und Desinfektion von Räumen nach belastenden Ereignissen. Der Ablauf wird einfühlsam und ohne unnötige Verzögerung mit Ihnen abgestimmt.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Verwenden Sie geprüfte Reinigungs- und Desinfektionsmittel?</button>
+          <div class="faq-answer">Ja. Im Rahmen unserer ISO 9001:2015 Zertifizierung setzen wir ausschließlich geprüfte und für den jeweiligen Bereich zugelassene Reinigungs- und Desinfektionsmittel ein. Die zugehörigen Datenblätter stellen wir auf Anfrage zur Verfügung.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Reinigen Sie auch Küchen und Lebensmittelbereiche in der Gastronomie?</button>

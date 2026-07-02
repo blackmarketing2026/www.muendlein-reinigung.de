@@ -663,13 +663,16 @@ p  { max-width: 65ch; }
 
 /* --- Vertrauens-Features --- */
 .trust-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: var(--spacing-md);
 }
 
 .trust-feature {
+  flex: 1 1 calc(33.333% - 0.667rem);
+  min-width: 220px;
   display: flex;
   align-items: center;
   gap: 0.75rem;
